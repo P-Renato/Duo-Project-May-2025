@@ -93,14 +93,14 @@
     position: absolute;
     top: 100%;
     left: -28em;
-    width: 100vw;
-    padding: 3em 6vw;
+    width: 40vw;
+    padding: 2em 2vw;
     background-color: #ffffff;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
     display: none;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2em;
+    gap: 1em;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
@@ -144,10 +144,6 @@
 
   /* HERO SECTION */
 .hero {
-    background-image: url(Images/Logo/Leonardo_Phoenix_10_Create_a_vibrant_and_bustling_cityscape_im_2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -188,7 +184,12 @@
     z-index: 2;
   }
 
+h2{
+    font-family: var(--mainText);
+    font-size: 2.2em;
+}
 
+h3{font-family: var(--listMenuFont);}
   
   /* Style the SVG icon */
   .search-bar svg {

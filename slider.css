@@ -1,0 +1,107 @@
+
+   body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(135, 185, 186, 0.4);
+   }
+   
+   .slider {
+    width: 100%;
+    height: 60vh;
+
+    overflow: hidden;
+    position: relative;
+  } 
+  
+   .slider-track {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+
+    will-change: transform;
+  } 
+
+   .slider:hover .slider-track {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+   
+  .image-card {
+    width: 40vw;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9),transparent);
+    box-sizing: border-box;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  
+  .page2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .solo{        
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.slideBtn{
+  padding: 1rem 2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+.slideBtn:hover{
+  background-color: #0056b3;
+}
+
+.page2 h1{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.page2 h3{
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.customers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .round{
+    width: 2rem;
+    height: 2rem;
+    border:2px solid black;
+    border-radius: 50%;
+    background-color: #007BFF;
+    margin-left: -8px;
+    cursor: pointer;
+    
+  }
