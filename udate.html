@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="travel.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="page1">
+
+    </section>
+
+    <section class="page2">
+         <h1>Choose your Path. Make the Journey Unforghettable </h1>
+         <div class="customers">  
+          
+            <img class="round" src="./pics/emoji3.jpg" alt="emoji2">
+            <img class="round" src="./pics/emoji4.jpg" alt="emoji3">
+            <img class="round" src="./pics/emoji5.jpg" alt="emoji4">
+             
+         <h3>Be one of our many satisfied customers</h3>
+         <img class="solo" src="./pics/emoji1.webp" alt="emoji1">
+        </div>
+        <div class="slider">
+            <div class="slider-track"> </div>
+        </div>
+        
+            <button> plan your jorney</button>
+        
+    </section>
+
+    <section class="page3">
+          <img src="./pics/map.jpg" alt="map">
+    </section>
+    <section class="page4">
+        <h1>Explore the Most Desired Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="#europe" onclick="showDestination('europe')">Europe</a></li>
+                <li><a href="#" onclick="showDestination('asia')">Asia</a></li>
+                <li><a href="#" onclick="showDestination('southAmerica')">South America</a></li>
+                <li><a href="#" onclick="showDestination('tropicals')">Tropicals</a></li>
+            </ul>
+        </nav>
+        <div class="destination" id="europe">
+           
+          <div class="infoTravel"> 
+           
+            <h1>The Europe</h1>
+             <p>Let's book everithing you need</p>
+           
+             <div class="features">
+                <span class="feature"><i class="fas fa-bed"></i> Hotel</span>
+                <span class="feature"><i class="fas fa-plane"></i> Flight</span>
+                <span class="feature"><i class="fas fa-car"></i> Transport</span>
+                <span class="feature"><i class="fas fa-utensils"></i> Restaurant</span>
+                <span class="feature"><i class="fas fa-map-marked-alt"></i> Guide</span>
+              </div>
+             <p>..you name it.</p>
+       
+             <p>Still not convinced? Ask our travelers!</p>
+           <img class="round" src="./pics/emoji1.webp" alt="happy">
+             
+           <p>Review: We lived an adventure that others can only dream</p>  
+             
+           <audio controls>
+                <source src="review-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+           
+
+              <div class="chat-widget" onclick="openChat()">
+                <div class="character">
+                 <img class="askme" src="/pics/girl.png" alt="girl">
+                </div>
+                <div class="speech-bubble">Ask me!</div>
+              </div>
+              
+              <div id="chat-box" class="chat-box">
+                <p>Hello! Need help choosing a destination?</p>
+                <p>Try Europe for culture, Asia for food, or Tropicals to relax! 🌴</p>
+                <button onclick="closeChat()">Close</button>
+              </div>
+            </div>
+        
+        
+         <div class="pituresGrid" >     
+              <img class="show item1" src="./pics/coloseum.jpg" alt="europe1">
+              <img class="show item2" src="./pics/Eiffel-Tower-Europe.webp" alt="europe2">
+              <img class="show item3" src="./pics/IMG_7778.jpg" alt="europe3">
+              <img class="show item4" src="./pics/europeMap.jpg" alt="europe4"> 
+         </div>    
+        </div>
+    </section>
+      <script src="slider.js"></script> 
+      <script src="travel.js"></script>  
+</body>
+</html>
