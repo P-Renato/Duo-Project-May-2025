@@ -1,0 +1,169 @@
+[
+    {
+        "id": 1,
+        "name": "Hiking",
+        "group": "Adentures",
+        "description": "Explore nature on foot through scenic trails, mountains, and forests.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/photo-nic-xOigCUcFdA8-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/andrew-ly-bQl2kRQyUE8-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/kalen-emsley-mgJSkgIo_JI-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/joel-jasmin-forestbird-znoL1m6MD_k-unsplash.jpg"
+        }
+
+    }, {
+        "id": 2,
+        "name": "Safari",
+        "group": "Adentures",
+        "description": "Experience wildlife up close in their natural habitat on guided expeditions.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/hu-chen-0LwfbRtQ-ac-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/damian-patkowski-T-LfvX-7IVg-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/harshil-gudka-pU-9BYqjhyo-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/sergey-pesterev-wdMWMHXUpsc-unsplash.jpg"
+        }
+    }, {
+        "id": 3,
+        "name": "Rafting",
+        "group": "Adentures",
+        "description": "Ride the rapids and navigate exciting river currents with a team.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/loren-dosti-M8cpBt6RSns-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/jackalope-west-02HBQ2w_yak-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/brad-pearson-2MO_9uDDu30-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/adventure-albania-wSFub7VcwOc-unsplash.jpg"
+        }
+    }, {
+        "id": 4,
+        "name": "Ziplining",
+        "group": "Adentures",
+        "description": "Soar above the ground and enjoy thrilling aerial views of forests and landscapes.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/perry-grone-R2yjoctLTEk-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/clinton-mwebaze-uw5aA3zalt4-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/roger-ce-MfvSYKy6Fls-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/isaac-mugwe-2_dEaSOpTcY-unsplash.jpg"
+        }
+    }, {
+        "id": 5,
+        "name": "Museums",
+        "group": "Cultural",
+        "description": "Discover art, history, and science through curated exhibits and collections.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/andrew-neel-acowe0pCVBg-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/stale-grut-f5MWSw11jjo-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/grant-ritchie-p-4xI3UPCCY-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/chris-nguyen-tXmc2mVDxJc-unsplash (1).jpg"
+        }
+    }, {
+        "id": 6,
+        "name": "Historic Sites",
+        "group": "Cultural",
+        "description": "Visit landmarks that hold cultural and historical significance across regions.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/uliana-sova-zH_1u_TNGts-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/aleksander-stypczynski-dSaR-fuLuDw-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/mandy-l--1HVslSNw0U-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/daniel-welsh-MVzq8_KgG0E-unsplash.jpg"
+        }
+    }, {
+        "id": 7,
+        "name": "Local Festivals",
+        "group": "Cultural",
+        "description": "Celebrate traditions, food, music, and arts with local communities.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/aranxa-esteve-pOXHU0UEDcg-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/gian-pietro-dragoni-siiXoX1uKzY-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/nandu-menon-hGHldbCgYDA-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/john-thomas-LtE6W_JVTGc-unsplash.jpg"
+        }
+    }, {
+        "id": 8,
+        "name": "Cooking Classes",
+        "group": "Cultural",
+        "description": "Learn to prepare traditional dishes hands-on with local chefs and ingredients.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/fotos-xsJP1WNDqrg-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/odiseo-castrejon-bG5rhvRH0JM-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/pew-nguyen-oPLdPgNeqeM-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg"
+        }
+    }, {
+        "id": 9,
+        "name": "Skiing",
+        "group": "Winter Sports",
+        "description": "Glide down snowy slopes and enjoy winter landscapes at ski resorts.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/alessio-soggetti-xqBllPa7XEs-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/banff-sunshine-village-UoBE_wJ-suk-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/matthieu-petiard-Pf6e3o0GL4M-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/maarten-duineveld-pmfJcN7RGiw-unsplash.jpg"
+        }
+    }, {
+        "id": 10,
+        "name": "Snowboarding",
+        "group": "Winter Sports",
+        "description": "Ride the snow with style and adrenaline on your snowboard.",
+        "images":{
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/ilya-shishikhin-bpz-MQJDJuA-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/greg-rosenke-TsBKncMZU-Q-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/mads-schmidt-rasmussen-tSp5_w9h5TQ-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/damiano-lingauri-OKBP1D8Wr4c-unsplash.jpg"
+        }
+    }, {
+        "id": 11,
+        "name": "Ice Climbing",
+        "group": "Winter Sports",
+        "description": "Climb frozen waterfalls and ice walls using axes and crampons.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/jon-hieb-LPQcqpbCxeY-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/mike-markov-v7BkDZg7pK8-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/greg-rakozy-N_3CHNdliVs-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/tom-brunberg-ULXo4fTbBk8-unsplash.jpg"
+        }
+    }, {
+        "id": 12,
+        "name": "Scuba Diving",
+        "group": "Water Sports",
+        "description": "Dive deep underwater to explore marine life and coral reefs.",
+        "images": {
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/sebastian-pena-lambarri-7i5HMCGupVw-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/francisco-jesus-navarro-hernandez-dtCTfjTEOgg-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/nazarizal-mohammad-k5Z2AhnRwT8-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/pascal-van-de-vendel-gcG_b9ijyqU-unsplash.jpg"
+        }
+    }, {
+        "id": 13,
+        "name": "Surfing",
+        "group": "Water Sports",
+        "description": "Catch ocean waves and ride them to shore on a surfboard.",
+        "images":{
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/jeremy-bishop-_CFv3bntQlQ-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/mathieu-chirico-sFSZuKI2CvY-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/silas-baisch-L78RstAZuTY-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/austin-neill-uHD0uyp79Dg-unsplash.jpg"
+        }
+    }, {
+        "id": 14,
+        "name": "Snorkeling",
+        "group": "Water Sports",
+        "description": "Float on the surface and observe underwater life with a snorkel mask.",
+        "images":{
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/analia-ferrario-9gWSkeRBmWg-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/phaisalphotos-maldivesphotographer-j0fhHiraqOE-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/art-rachen-EHoCnfN58cc-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/carolina-garcia-DZtrCR-vtE0-unsplash.jpg"
+        }
+    }, {
+        "id": 15,
+        "name": "Kayaking",
+        "group": "Water Sports",
+        "description": "Paddle through rivers, lakes, or coastlines in a narrow watercraft.",
+        "images":{
+            "image1": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/filip-mroz-zK049OFP4uI-unsplash.jpg",
+            "image2": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/brandon-mcdonald-_oU62drqdho-unsplash.jpg",
+            "image3": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/taryn-manning-y3CAU_73jWk-unsplash.jpg",
+            "image4": "/home/dci-student/Desktop/DCI-Lessons/Group-Projects/Duo-Project-May-2025/Images/Logo/jsonImages/rune-haugseng-Tgo2oZukkl0-unsplash.jpg"
+        }
+    }
+]
