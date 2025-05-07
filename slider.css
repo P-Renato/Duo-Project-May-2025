@@ -6,7 +6,7 @@
 }
   body{
    background-color: rgba(230, 231, 223, 0.312); 
-   background-image: url('Images/Logo/pics/relax.webp');
+   background-image: url('Images/Logo/pics/cockteil.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -89,12 +89,12 @@
 .page2 h2{
   font-size: 3rem;
   margin-bottom: 20px;
-  color: azure;
+  color: rgb(0, 0, 0);
 }
 .page2 h3{
   font-size: 1.5rem;
   margin: 1rem;
-  color: azure;
+  color: rgb(0, 0, 0);
 }
 .customers{
   display: flex;
@@ -119,8 +119,8 @@
       justify-content: center;
       }
 .page3 img{
-  width: 90%;
-
+  width: 80rem;
+  height: 20rem;
   object-fit: cover;
 } 
 
