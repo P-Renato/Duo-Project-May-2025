@@ -1,25 +1,49 @@
-// Get query parameter
-const params = new URLSearchParams(window.location.search);
-const activityName = params.get("name");
+async function loadActivity() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const activityName = urlParams.get('activity');
 
-// Load JSON data
-fetch('/data/activities.json')
-  .then(res => res.json())
-  .then(data => {
-    // Find matching activity
-    const activity = data.find(a => a.name.toLowerCase() === activityName.toLowerCase());
+    const contentDiv = document.getElementById('content');
 
-    if (!activity) {
-      document.getElementById("activity-container").innerHTML = "<p>Activity not found.</p>";
+    if (!activityName) {
+      contentDiv.innerHTML = '<p class="not-found">No activity specified.</p>';
       return;
     }
 
-    // Fill content
-    document.getElementById("title").textContent = activity.name;
-    document.getElementById("description").textContent = activity.description;
-    document.getElementById("image").src = activity.image;
-    document.getElementById("image").alt = activity.name;
-  })
-  .catch(err => {
-    console.error("Failed to load activity data:", err);
-  });
+    try {
+      const response = await fetch('data/activities.json'); // Make sure this is in the same folder
+      const data = await response.json();
+
+      console.log(data)
+
+      
+      // Flatten the data into a single array of activities
+      const allActivities = Object.values(data).flat();
+
+      const matched = allActivities.find(item => item.name.toLowerCase() === activityName.toLowerCase());
+
+      if (!matched) {
+        contentDiv.innerHTML = `<p class="not-found">Activity "${activityName}" not found.</p>`;
+        return;
+      }
+
+      document.title = matched.name;
+      contentDiv.innerHTML = `
+      <h1 class="activity-group">${matched.group}</h1>
+      <section class="activity-box">
+        <h2 class="activity-title">${matched.name}</h2>
+        <p class="activity-description">${matched.description}</p>
+        <section class="images-box">
+            <img class="image1" src="${matched.images.image1}">
+            <img class="image2" src="${matched.images.image2}">
+            <img class="image3" src="${matched.images.image3}">
+            <img class="image4" src="${matched.images.image4}">
+        </section>
+      </section>
+      `;
+    } catch (err) {
+      console.error('Error fetching activities.json:', err);
+      contentDiv.innerHTML = '<p class="not-found">Failed to load activity data.</p>';
+    }
+  }
+
+  loadActivity();
