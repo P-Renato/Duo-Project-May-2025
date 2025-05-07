@@ -14,6 +14,7 @@ fetch('/data/activities.json')
       return;
     }
 
+    console.log(data)
     // Fill content
     document.getElementById("title").textContent = activity.name;
     document.getElementById("description").textContent = activity.description;
