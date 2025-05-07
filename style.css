@@ -2,54 +2,47 @@
     --mainText: "Instrument Serif", serif;
     --listMenuFont: "Forum", serif;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  body {
-    background-color: #fff;
-    color: #1f1f1f;
-  }
+.list-menu {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1em 2em;
+height: 20vh;
+width: 100%;
+background-color: #ffffff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
- .list-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2em;
-    height: 15vh;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+nav {
+display: flex;
+align-items: center;
+gap: 1.5em;
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-  }
+nav img {
+width: 8em;
+height: 8em;
+object-fit: contain;
+}
 
-  nav img {
-    width: 3em;
-    height: 3em;
-    object-fit: contain;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #1f1f1f;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    transition: color 0.3s;
-    font-family: var(--listMenuFont);
-  }
+nav a {
+text-decoration: none;
+color: #1f1f1f;
+font-weight: 500;
+font-size: 1.8em;
+display: flex;
+align-items: center;
+gap: 0.5em;
+transition: color 0.3s;
+font-family: var(--listMenuFont);
+letter-spacing: .3em;
+}
 
 
-  svg {
-    vertical-align: middle;
-  }
+svg {
+vertical-align: middle;
+}
 
 
 .login {
@@ -63,171 +56,201 @@
 }
 
   /* nav bar */
-  nav {
-    position: relative;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--listMenuFont);
-  }
-  
-  .dropdown:hover ul {
-    display: block;
-  }
-  
-  .dropdown ul li {
-    padding: 0.5em 0;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  
-  .dropdown ul li:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: -28em;
-    width: 40vw;
-    padding: 2em 2vw;
-    background-color: #ffffff;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1em;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
-  }
-  
-  /* Show the dropdown on hover */
-  .dropdown:hover .dropdown-menu {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  /* Each column */
-  .dropdown-column {
-    min-width: 20em;
-  }
-  
-  
-  /* List styling */
-  .dropdown-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown-column ul li {
-    padding: 0.3em 0;
-    font-size: 0.95em;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
-  
-  .dropdown-column ul li:hover {
-    color: #0073e6;
-  }
-
-
-
-  /* HERO SECTION */
-.hero {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    text-align: center;
-    color: black;
-    position: relative;
-    
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 2em;
-    z-index: 2;
-    font-family: var(--mainText);
-    text-align: center;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    max-width: 30em;
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-  }
-
-h2{
-    font-family: var(--mainText);
-    font-size: 2.2em;
+nav {
+position: relative;
 }
 
-h3{font-family: var(--listMenuFont);}
+.dropdown {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: var(--listMenuFont);
+}
+
+.dropdown:hover ul {
+display: block;
+}
+
+.dropdown ul li {
+padding: 0.5em 0;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+.dropdown ul li:hover {
+background-color: #f0f0f0;
+}
+
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: -2em;
+width: 60vw;
+padding: 2em 2vw;
+background-color: #ffffff;
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+display: none;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 1em;
+opacity: 0;
+visibility: hidden;
+transform: translateY(10px);
+transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+z-index: 999;
+}
   
-  /* Style the SVG icon */
-  .search-bar svg {
-    margin-left: 1em;
-    margin-right: 0.5em;
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    fill: #888;
-  }
-  
-  /* Input styling */
-  .search-bar input {
-    flex: 1;
-    border: none;
-    padding: 1em 0.5em;
-    font-size: 1em;
-    outline: none;
-  }
-  
-  /* Button styling */
-  .search-bar button {
-    background: #0073e6;
-    color: #fff;
-    border: none;
-    padding: 0 2em;
-    font-size: 1em;
-    height: 100%;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    white-space: nowrap;
-  }
-  
-  .search-bar button:hover {
-    background: #005bb5;
-  }
-  
-  @media (max-width: 390px) {
+.destination-menu{
+    left: -2em;
+    height: 60vh;
+}
+.activities-menu{
+    left: -12em;
+    height: 65vh;
+}
+.travel-types-menu {
+    left: -20em;
+    height: 55vh;
+}
+
+.open-search:hover {
+    text-decoration: underline;
+}
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+display: flex;
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+
+/* Each column */
+.dropdown-column {
+min-width: 20em;
+}
+
+
+/* List styling */
+.dropdown-column ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.dropdown-column ul li {
+padding: 0.3em 0;
+font-size: 0.95em;
+cursor: pointer;
+transition: color 0.2s;
+}
+
+.dropdown-column ul li:hover {
+color: #0073e6;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 2em;
+text-align: center;
+color: black;
+position: relative;
+
+}
+
+.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: 1;
+}
+
+.hero h1 {
+font-size: 2.5em;
+margin-bottom: 2em;
+z-index: 2;
+font-family: var(--mainText);
+text-align: center;
+letter-spacing: .1em;
+
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+width: 90%;
+max-width: 30em;
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+z-index: 2;
+}
+
+h2 {
+font-family: var(--mainText);
+font-size: 2.2em;
+}
+
+h3 {
+    font-family: var(--listMenuFont);
+}
+
+/* Style the SVG icon */
+.search-bar svg {
+margin-left: 1em;
+margin-right: 0.5em;
+flex-shrink: 0;
+width: 24px;
+height: 24px;
+fill: #888;
+}
+
+/* Input styling */
+.search-bar input {
+flex: 1;
+border: none;
+padding: 1em 0.5em;
+font-size: 1em;
+outline: none;
+}
+
+/* Button styling */
+.search-bar button {
+background: #0073e6;
+color: #fff;
+border: none;
+padding: 0 2em;
+font-size: 1em;
+height: 100%;
+cursor: pointer;
+transition: background 0.3s ease;
+white-space: nowrap;
+}
+
+.search-bar button:hover {
+background: #005bb5;
+}
+
+@media (max-width: 390px) {
+    .page1,
+    .page2,
+    .page3,
+    .page4 {
+        width: 100%;
+    }
+    .list-menu {
+        width: 100vw;
+        height: 15vh;
+    }
     .search-bar{
         width: 100%;
         justify-content: space-around;
@@ -242,5 +265,150 @@ h3{font-family: var(--listMenuFont);}
         font-size: .9em;
         padding: .5em;
     }
-   
+
+    nav img {
+        width: 3em;
+        height: 3em;
+        object-fit: contain;
+    }
+    nav a {
+        font-size: .7em;
+        letter-spacing: .1em;
+    }
+
+    .login  {
+        padding: .3em;
+    }
+
+    .destination-menu{
+        left: -2em;
+        height: 80vh;
+    }
+    .activities-menu{
+        left: -7em;
+        height: 75vh;
+    }
+    .travel-types-menu {
+        left: -12em;
+        height: 75vh;
+    }
+
+}
+
+
+
+@media (min-width: 391px) and (max-width: 840px) {
+    .page1,
+    .page2,
+    .page3,
+    .page4 {
+        width: 100%;
+    }
+    .list-menu {
+        width: 100%;
+        height: 15vh;
+    }
+    .search-bar{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .search-bar input {
+        font-size: .7em;
+        width: 8em;
+    }
+
+    .search-bar button {
+        font-size: .9em;
+        padding: .5em;
+    }
+
+    nav img {
+        width: 4em;
+        height: 4em;
+        object-fit: contain;
+        }
+        nav a {
+        font-size: 1em;
+        letter-spacing: .3em;
+    }
+
+    .login {
+        padding: .3em;
+    }
+
+}
+
+@media (min-width: 841px) {
+    .page1,
+    .page2,
+    .page3,
+    .page4 {
+        width: 100%;
+    }
+    .list-menu {
+        width: 100%;
+    }
+
+    .destination-menu{
+        left: -3em;
+        height: 60vh;
+    }
+    .activities-menu{
+        left: -18em;
+        height: 65vh;
+    }
+    .travel-types-menu {
+        left: -32em;
+        height: 55vh;
+    }
+}
+
+.page4-nav-bar {
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content input, .modal-content button {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    padding: 0.8em;
+    font-size: 1em;
+  }
+  
+  .close {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .searchBtnInBox:hover {
+    background-color: #9cc3ebb9;
+    color: #80476a;
   }
