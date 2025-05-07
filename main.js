@@ -1,74 +1,35 @@
-// const url = 'https://restcountries.com/v3.1/all';
-
-// const fetchedCountries = async () => {
-//     try {
-//         const response = await fetch(url);
-//         const data = await response.json();
-//         console.log(data);
-//     } catch (error) {
-//         console.error('Error message!', error);
-//     }
-
-//     const container = document.querySelector('.nationalities-container');
-
-                
-//     if (container) {
-//         container.innerHTML = "";
-
-//         // Group coutries by nationalities
-//         const nationalities = {};
-
-//         data.forEach(country => {
-//             if (!nationalities[country]) {
-//                 nationalities[country] = [];
-//             }
-//             nationalities[country].push(country);
-
-
-              
-//         });
-
-//         const countryFlags = country.flag;
-//         console.log(countryFlags)
-//     };
-
+const database = [
     
-
-// } 
-// fetchedCountries()
-// // console.log(fetchedCountries);
+]
 
 
 
 
-const url = 'https://restcountries.com/v3.1/all';
 
-const fetchedCountries = async () => {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
 
-        const container = document.querySelector('.nationalities-container');
 
-        if (container) {
-            container.innerHTML = "";
 
-            
-            // Example: loop through and show each country with its flag
-            data.forEach(country => {
-                const countryName = country.name.common;
-                const flag = country.flags?.png || ''; // fallback
-                const mapUrl = country.maps?.googleMaps;
 
-                const countryEl = document.createElement('div');
-                
-            });
-        }
 
-    } catch (error) {
-        console.error('Error fetching countries:', error);
+
+
+
+
+const modal = document.getElementById("search-modal");
+  const openBtn = document.querySelector(".open-search");
+  const closeBtn = document.querySelector(".close");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
     }
-};
+  });
 
-fetchedCountries();
