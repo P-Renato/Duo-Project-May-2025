@@ -240,7 +240,7 @@ white-space: nowrap;
 background: #005bb5;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 320px) {
     .page1,
     .page2,
     .page3,
