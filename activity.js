@@ -28,7 +28,8 @@ async function loadActivity() {
 
       document.title = matched.name;
       contentDiv.innerHTML = `
-        <h1 class="activity-group">${matched.group}</h1>
+      <h1 class="activity-group">${matched.group}</h1>
+      <section class="activity-box">
         <h2 class="activity-title">${matched.name}</h2>
         <p class="activity-description">${matched.description}</p>
         <section class="images-box">
@@ -37,6 +38,7 @@ async function loadActivity() {
             <img class="image3" src="${matched.images.image3}">
             <img class="image4" src="${matched.images.image4}">
         </section>
+      </section>
       `;
     } catch (err) {
       console.error('Error fetching activities.json:', err);
