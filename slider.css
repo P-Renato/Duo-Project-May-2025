@@ -3,15 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
   body{
    background-color: rgba(230, 231, 223, 0.312); 
-   background-image: url('Images/Logo/pics/cockteil.jpg');
+   background-image: url('Images/Logo/pics/nice-cockteil.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
-
+  overflow-x: hidden;
   }
   
   .slider {
@@ -89,12 +94,12 @@
 .page2 h2{
   font-size: 3rem;
   margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+  color: rgb(62, 59, 59);
 }
 .page2 h3{
   font-size: 1.5rem;
   margin: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(62, 59, 59);
 }
 .customers{
   display: flex;
@@ -113,14 +118,4 @@
   cursor: pointer;
   }
 
-.page3{
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      }
-.page3 img{
-  width: 80rem;
-  height: 20rem;
-  object-fit: cover;
-} 
-
+ 

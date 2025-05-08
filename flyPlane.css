@@ -1,0 +1,138 @@
+.page3{
+    width: 100vw;
+    height: 25rem;
+    
+   
+    margin: 0 auto;
+
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+    
+    position: relative;
+    }
+
+
+.first{
+        margin-left: 5%;
+        background-image: url('Images/Logo/pics/berlin.jpeg');
+        background-size: cover;
+        background-position: center;
+    
+        width: 40vh;
+        height: 40vh;
+        border: 3px solid black;
+        border-radius: 50%;
+        
+
+        position: relative; 
+         display: flex;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+       
+} 
+
+.name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black; /* Helps text be readable over the image */
+}
+.second{
+    margin-right: 5%;
+
+    background-image: url('Images/Logo/pics/singapore.avif');
+    background-size: cover;
+    background-position: center;
+
+    width: 40vh;
+    height: 40vh;
+    border: 3px solid black;
+    border-radius: 50%;
+    
+
+    position: relative; 
+    display: flex;
+   align-items: center;
+   justify-content: center; 
+   text-align: center;
+}
+
+@keyframes sway {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(4px) translateY(8px); }
+    100% { transform: translateX(0) ; }
+}
+
+.pirate {
+    width: 8rem;
+    height: 8rem;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-top: 6%;
+    background-image: url('Images/Logo/pics/pirates.webp');
+    background-size: cover;
+    background-position: center;
+    animation: sway 2s ease-in-out infinite;
+}
+
+.plane {
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url('Images/Logo/pics/plane.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: flyParabola 20s infinite ease-in-out;
+  }
+
+  @keyframes flyParabola {
+    0% {
+      left: 20%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(0deg) scale(0.9) scaleX(1);
+    }
+  
+    25% {
+      top: 30%;
+      transform: translate(-50%, -50%) rotate(-10deg) scale(1.3) scaleX(1);
+    }
+  
+    50% {
+      left: 80%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(0deg) scale(1.2) scaleX(1);
+    }
+  
+    60% {
+      top: 60%;
+      transform: translate(-50%, -50%) rotate(10deg) scale(0.9) scaleX(-1);
+    }
+  
+    70% {
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(0deg) scale(0.9) scaleX(-1); 
+    }
+  
+    75% {
+      top: 30%;
+      transform: translate(-50%, -50%) rotate(10deg) scale(1.3) scaleX(-1);
+    }
+  
+    100% {
+      left: 20%;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(0deg) scale(1) scaleX(-1);
+    }
+  }

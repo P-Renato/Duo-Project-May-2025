@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Vast+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="flyPlane.css">
   </head>
 <body>
       <section class="page1">
@@ -197,7 +197,20 @@
       </section>
 
       <section class="page3">
-        <img src="Images/Logo/pics/colorful-map.jpg" alt="map">
+       
+         <div class="first"> 
+          <span class="name">Berlin</span>
+         </div>
+           <div class="pirate"></div>
+          
+         <div class="second">
+          <span class="name">Singapore</span>
+         </div>
+        
+         <div class="plane">
+        
+         </div>  
+         
      </section>
   
      <section class="page4">
@@ -209,33 +222,32 @@
           <img src="Images/Logo/travel-world.avif" alt="Destination" />
         </div>
       
-      
-        <nav class="page4-nav-bar">
+       
+         <nav class="page4-nav-bar">
           <svg class="circular-text-svg" viewBox="0 0 200 200">
             <defs>
-              <!-- Full circle path slightly outside the image (adjust radius to control distance) -->
-              <path id="fullCirclePath" d="M 100,100 m -75,0 a 75,75 0 1,1 155,0 a 75,75 0 1,1 -190,0" />
+         
+            <path id="fullCirclePath" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0" />
             </defs>
-            <!-- This is turning the circle visually  -->
-            <g transform="rotate(-18, 100, 100)">
-              
-            <text class="circular-text">
-              <textPath href="#fullCirclePath" startOffset="0%">
-                <tspan onclick="showDestination('tropicals')" class="nav-link">Tropicals</tspan>
-              </textPath>
-              <textPath href="#fullCirclePath" startOffset="14%">
-                <tspan onclick="showDestination('europe')" class="nav-link">Europe</tspan>
-              </textPath>
-              <textPath href="#fullCirclePath" startOffset="25%">
-                <tspan onclick="showDestination('southAmerica')" class="nav-link">South-America</tspan>
-              </textPath>
-              <textPath href="#fullCirclePath" startOffset="47%">
-                <tspan onclick="showDestination('asia')" class="nav-link">Asia</tspan>
-              </textPath>
-            </text>
+            <g>
+              <text class="circular-text">
+                <textPath href="#fullCirclePath" startOffset="0%">
+                  <tspan onclick="showDestination('tropicals')" class="nav-link">Tropicals</tspan>
+                </textPath>
+                <textPath href="#fullCirclePath" startOffset="20%">
+                  <tspan onclick="showDestination('europe')" class="nav-link">Europe</tspan>
+                </textPath>
+                <textPath href="#fullCirclePath" startOffset="38%">
+                  <tspan onclick="showDestination('southAmerica')" class="nav-link">South-America</tspan>
+                </textPath>
+                <textPath href="#fullCirclePath" startOffset="68%">
+                  <tspan onclick="showDestination('asia')" class="nav-link">Asia</tspan>
+                </textPath>
+              </text>
+            </g>
           </svg>
         </nav>
-        
+       
       </div>
       <h1>Explore the Most Desired Destinations</h1>
     </div>
@@ -244,7 +256,7 @@
         <div class="infoTravel"> 
          
           <h1>Europe</h1>
-          <p>Your unforgettable journey begins here.</p>
+          <h3>Your unforgettable journey begins here.</h3>
           <p>From the romantic streets of Paris to the sun-kissed beaches of Greece, Europe is a mosaic of cultures, flavors, and unforgettable moments.</p>
 
            <div class="features">
@@ -296,8 +308,7 @@
 
         <script src="slider.js"></script>  
         <script src="travel.js"></script>
-     
-        
+        <script src="flyPlane.js"></script>
 
       <script src="main.js" type="module"></script>
 </body>
