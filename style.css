@@ -60,7 +60,8 @@ nav {
 position: relative;
 }
 
-.dropdown {
+.dropdown,
+.activities-menu {
 position: relative;
 display: flex;
 justify-content: space-between;
@@ -103,7 +104,7 @@ z-index: 999;
   
 .destination-menu{
     left: -2em;
-    height: 60vh;
+    height: 20vh;
 }
 .activities-menu{
     left: -12em;
@@ -138,7 +139,8 @@ padding: 0;
 margin: 0;
 }
 
-.dropdown-column ul li {
+.dropdown-column ul li,
+.dropdown-column ul li a {
 padding: 0.3em 0;
 font-size: 0.95em;
 cursor: pointer;
@@ -352,7 +354,7 @@ background: #005bb5;
 
     .destination-menu{
         left: -3em;
-        height: 60vh;
+        height: 30vh;
     }
     .activities-menu{
         left: -18em;
