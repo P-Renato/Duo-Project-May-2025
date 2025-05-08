@@ -29,7 +29,7 @@
   let animationId;
   
   function animateSlider() {
-    pos -= 1.8;
+    pos -= 0.8;
     if (Math.abs(pos) >= track.scrollWidth / 2) {
       pos = 0;
     }
@@ -37,14 +37,14 @@
     animationId = requestAnimationFrame(animateSlider);
   }
   
-  animateSlider(); // Start animation
+  animateSlider(); 
   
-  // Pause and resume logic
+ 
   function pauseSlider() {
     cancelAnimationFrame(animationId);
   }
   function resumeSlider() {
-    cancelAnimationFrame(animationId); // Avoid duplicates
+    cancelAnimationFrame(animationId); 
     animateSlider();
   }
   
