@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touring Around</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="travel.css">
@@ -13,136 +13,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Vast+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="flyPlane.css">
+    <link rel="stylesheet" href="page4mobile.css">
+  
+    <title>Touring Around</title>
   </head>
 <body>
       <section class="page1">
-            <section class="list-menu">
-                <nav>
-                    <a href="index.html">
-                      <img src="Images/Logo/Tour_Logo.jpg"  alt="logo-image">
-                    </a>
-                </nav>
-                <nav>
-        
-                    <div class="dropdown">
-                        <a href="#" class="open-search">Destination</a>
-                        <div class="dropdown-menu destination-menu">
-                          <div class="dropdown-column">
-                            <h4 class="europe-menu-bar"><a href="#europe">Europe</a></h4>
-                            <ul>
-                              <li><a href="">France</a></li>
-                              <li><a href="">Italy</a></li>
-                              <li><a href="">Germany</a></li>
-                              <li><a href="">Spain</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown-column">
-                            <h4><a href="#asia">Asia</a></h4>
-                            <ul>
-                              <ul>
-                                <li><a href="">Japan</a></li>
-                                <li><a href="">Thailand</a></li>
-                                <li><a href="">China</a></li>
-                                <li><a href="">South Korea</a></li>
-                              </ul>
-                          </div>
+          <section class="list-menu">
+            <nav>
+                <a href="index.html">
+                  <img src="Images/Logo/Tour_Logo.jpg"  alt="logo-image">
+                </a>
+            </nav>
+          <nav>
+                  
+          <div class="dropdown">
+            <a href="#" data-t="nav.destination" class="open-search">Destination</a>
+            <div class="dropdown-menu destination-menu">
+              <div class="dropdown-column">
+                <h4 class="europe-menu-bar"><a href="#europe" data-t="nav.europe">Europe</a></h4>
+                <ul>
+                  <li><a href="" data-t="navItems.europe.france">France</a></li>
+                  <li><a href="" data-t="navItems.europe.italy">Italy</a></li>
+                  <li><a href="" data-t="navItems.europe.germany">Germany</a></li>
+                  <li><a href="" data-t="navItems.europe.spain">Spain</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#asia" data-t="nav.asia">Asia</a></h4>
+                <ul>
+                  <li><a href="" data-t="navItems.asia.japan">Japan</a></li>
+                  <li><a href="" data-t="navItems.asia.thailand">Thailand</a></li>
+                  <li><a href="" data-t="navItems.asia.china">China</a></li>
+                  <li><a href="" data-t="navItems.asia.southKorea">South Korea</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#south-america" data-t="nav.southAmerica">South America</a></h4>
+                <ul>
+                  <li><a href="" data-t="navItems.southAmerica.brazil">Brazil</a></li>
+                  <li><a href="" data-t="navItems.southAmerica.argentina">Argentina</a></li>
+                  <li><a href="" data-t="navItems.southAmerica.peru">Peru</a></li>
+                  <li><a href="" data-t="navItems.southAmerica.colombia">Colombia</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                          <div class="dropdown-column">
-                            <h4><a href="#south-america">South America</a></h4>
-                            <ul>
-                              <li><a href="">Brazil</a></li>
-                              <li><a href="">Argentina</a></li>
-                              <li><a href="">Peru</a></li>
-                              <li><a href="">Colombia</a></li>
-                            </ul>
-                          </div>
-                         
-                        </div>
-                      </div>
-                      
-                        
-                      <div class="dropdown">
-                        <a href="#" class="open-search">Activities</a>
-                        <div class="dropdown-menu activities-menu">
-                          
-                          <div class="dropdown-column">
-                            <h4><a href="">Adventure</a></h4>
-                            <ul>
-                              <li><a href="activity.html?activity=Hiking">Hiking</a></li>
-                              <li><a href="activity.html?activity=Safari">Safari</a></li>
-                              <li><a href="activity.html?activity=Rafting">Rafting</a></li>
-                              <li><a href="activity.html?activity=Ziplining">Ziplining</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column">
-                            <h4><a href="">Water Sports</a></h4>
-                            <ul>
-                              <li><a href="activity.html?activity=Scuba%20Diving">Scuba Diving</a></li>
-                              <li><a href="activity.html?activity=Surfing">Surfing</a></li>
-                              <li><a href="activity.html?activity=Snorkeling">Snorkeling</a></li>
-                              <li><a href="activity.html?activity=Kayaking">Kayaking</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column">
-                            <h4><a href="">Cultural</a></h4>
-                            <ul>
-                              <li><a href="activity.html?activity=Museums">Museums</a></li>
-                              <li><a href="activity.html?activity=Historic%20Sites">Historic Sites</a></li>
-                              <li><a href="activity.html?activity=Local%20Festivals">Local Festivals</a></li>
-                              <li><a href="activity.html?activity=Cooking%20Classes">Cooking Classes</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column">
-                            <h4><a href="">Winter Sports</a></h4>
-                            <ul>
-                              <li><a href="activity.html?activity=Skiing">Skiing</a></li>
-                              <li><a href="activity.html?activity=Snowboarding">Snowboarding</a></li>
-                              <li><a href="activity.html?activity=Ice%20Climbing">Ice Climbing</a></li>
-                            </ul>
-                          </div>
-                          
-                    
-                        </div>
-                      </div>
-                      
-                    
-                      <div class="dropdown">
-                        <a href="#" class="open-search">Travel Types</a>
-                        <div class="dropdown-menu travel-types-menu">
-                          <div class="dropdown-column">
-                            <h4><a href="">By Group</a></h4>
-                            <ul>
-                              <li><a href="">Solo Travel</a></li>
-                              <li><a href="">Couples</a></li>
-                              <li><a href="">Family</a></li>
-                              <li><a href="">Friends</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown-column">
-                            <h4><a href="">By Theme</a></h4>
-                            <ul>
-                              <li><a href="">Wellness</a></li>
-                              <li><a href="">Food & Wine</a></li>
-                              <li><a href="">Honeymoon</a></li>
-                              <li><a href="">Volunteering</a></li>
-                            </ul>
-                          </div>
-                          <div class="dropdown-column">
-                            <h4><a href="">Seasonal</a></h4>
-                            <ul>
-                              <li><a href="">Summer Holidays</a></li>
-                              <li><a href="">Winter Getaways</a></li>
-                              <li><a href="">Spring Break</a></li>
-                              <li><a href="">Christmas Markets</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      
+          <!-- Activities Dropdown -->
+          <div class="dropdown">
+            <a href="#" data-t="nav.activities" class="open-search">Activities</a>
+            <div class="dropdown-menu activities-menu">
+              <div class="dropdown-column">
+                <h4><a href="#adventure" data-t="navItems.activities.adventure">Adventure</a></h4>
+                <ul>
+                  <li><a href="" data-t="activities.hiking">Hiking</a></li>
+                  <li><a href="" data-t="activities.safari">Safari</a></li>
+                  <li><a href="" data-t="activities.rafting">Rafting</a></li>
+                  <li><a href="" data-t="activities.ziplining">Ziplining</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#water" data-t="navItems.activities.water">Water Sports</a></h4>
+                <ul>
+                  <li><a href="" data-t="activities.scuba">Scuba Diving</a></li>
+                  <li><a href="" data-t="activities.surfing">Surfing</a></li>
+                  <li><a href="" data-t="activities.snorkeling">Snorkeling</a></li>
+                  <li><a href="" data-t="activities.kayaking">Kayaking</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#cultural" data-t="navItems.activities.cultural">Cultural</a></h4>
+                <ul>
+                  <li><a href="" data-t="activities.museums">Museums</a></li>
+                  <li><a href="" data-t="activities.historicSites">Historic Sites</a></li>
+                  <li><a href="" data-t="activities.festivals">Local Festivals</a></li>
+                  <li><a href="" data-t="activities.cooking">Cooking Classes</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#winter" data-t="navItems.activities.winter">Winter Sports</a></h4>
+                <ul>
+                  <li><a href="" data-t="activities.skiing">Skiing</a></li>
+                  <li><a href="" data-t="activities.snowboarding">Snowboarding</a></li>
+                  <li><a href="" data-t="activities.iceClimbing">Ice Climbing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Travel Types Dropdown -->
+          <div class="dropdown">
+            <a href="#" data-t="nav.travelTypes" class="open-search">Travel Types</a>
+            <div class="dropdown-menu travel-types-menu">
+              <div class="dropdown-column">
+                <h4><a href="#group" data-t="navItems.travelTypes.byGroup">By Group</a></h4>
+                <ul>
+                  <li><a href="" data-t="group.solo">Solo Travel</a></li>
+                  <li><a href="" data-t="group.couples">Couples</a></li>
+                  <li><a href="" data-t="group.family">Family</a></li>
+                  <li><a href="" data-t="group.friends">Friends</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#theme" data-t="navItems.travelTypes.byTheme">By Theme</a></h4>
+                <ul>
+                  <li><a href="" data-t="theme.wellness">Wellness</a></li>
+                  <li><a href="" data-t="theme.food">Food & Wine</a></li>
+                  <li><a href="" data-t="theme.honeymoon">Honeymoon</a></li>
+                  <li><a href="" data-t="theme.volunteering">Volunteering</a></li>
+                </ul>
+              </div>
+              <div class="dropdown-column">
+                <h4><a href="#seasonal" data-t="navItems.travelTypes.seasonal">Seasonal</a></h4>
+                <ul>
+                  <li><a href="" data-t="season.summer">Summer Holidays</a></li>
+                  <li><a href="" data-t="season.winter">Winter Getaways</a></li>
+                  <li><a href="" data-t="season.spring">Spring Break</a></li>
+                  <li><a href="" data-t="season.christmas">Christmas Markets</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
                   </nav>
         
                   
@@ -152,7 +144,12 @@
                          Login</a>
                 </nav>
 
-                <div id="search-modal" class="modal">
+                <select class="language-switcher">
+                  <option value="en" selected>English</option>
+                  <option value="de">German</option>
+                 </select>
+
+                <!-- <div id="search-modal" class="modal">
                     <div class="modal-content">
                       <span class="close">&times;</span>
                       <h2>Plan Your Trip</h2>
@@ -161,7 +158,7 @@
                       <input type="date" />
                       <button class="searchBtnInBox">Search</button>
                     </div>
-                  </div>
+                  </div> -->
             </section>
             
        
@@ -251,46 +248,9 @@
       </div>
       <h1>Explore the Most Desired Destinations</h1>
     </div>
-      <div class="destination" id="europe">
-      
-        <div class="infoTravel"> 
-         
-          <h1>Europe</h1>
-          <h3>Your unforgettable journey begins here.</h3>
-          <p>From the romantic streets of Paris to the sun-kissed beaches of Greece, Europe is a mosaic of cultures, flavors, and unforgettable moments.</p>
+     
+      <div class="destination" id="destinationContainer"></div>
 
-           <div class="features">
-              <span class="feature"><i class="fas fa-bed"></i> Hotel</span>
-              <span class="feature"><i class="fas fa-plane"></i> Flight</span>
-              <span class="feature"><i class="fas fa-car"></i> Transport</span>
-              <span class="feature"><i class="fas fa-utensils"></i> Restaurant</span>
-              <span class="feature"><i class="fas fa-map-marked-alt"></i> Guide</span>
-            </div>
-            <p>Plan everything in one place – simple, fast, and stress-free.</p>
-
-            <p><strong>Traveler’s Words:</strong> “We lived an adventure that others can only dream of.”</p>
-         <div class="review">   
-         <img class="round" src="Images/Logo/pics/emoji1.webp" alt="happy">
-            <audio controls>
-              <source src="review-audio.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-        
-            <div class="imageSide">
-              <img src="Images/Logo/pics/europe-banner.jpg" alt="Europe view" class="banner">
-            </div>
-          </div>   
-        </div> 
-
-      
-       <div class="pituresGrid" >     
-            <img class="show item1" src="Images/Logo/pics/coloseum.jpg" alt="europe1">
-            <img class="show item2" src="Images/Logo/pics/Eiffel-Tower-Europe.webp" alt="europe2">
-            <img class="show item3" src="Images/Logo/pics/IMG_7778.jpg" alt="europe3">
-            <img class="show item4" src="Images/Logo/pics/europeMap.jpg" alt="europe4"> 
-       </div>    
-      </div>
- 
     </section>
 
     <div class="chat-widget" onclick="openChat()">
@@ -308,9 +268,10 @@
 
         <script src="slider.js"></script>  
         <script src="travel.js"></script>
-     
-           <script src="flyPlane.js"></script>
+        <script src="page4dynamic.js"></script>
 
-      <script src="main.js" type="module"></script>
+        <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+
+      <script src="main.js"></script>
 </body>
 </html>

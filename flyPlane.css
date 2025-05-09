@@ -1,16 +1,14 @@
 .page3{
     width: 100vw;
-    height: 25rem;
+    height: 25vh;
     
-   
-    margin: 0 auto;
-
+    margin: 2rem auto;
     display: flex;
    
     justify-content: space-around;
     align-items: center;
     
-    position: relative;
+     position: relative;
     }
 
 

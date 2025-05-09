@@ -28,10 +28,10 @@ async function loadActivity() {
 
       document.title = matched.name;
       contentDiv.innerHTML = `
-      <h1 class="activity-group">${matched.group}</h1>
+      <h1 class="activity-group" data-t="">${matched.group}</h1>
       <section class="activity-box">
-        <h2 class="activity-title">${matched.name}</h2>
-        <p class="activity-description">${matched.description}</p>
+        <h2 class="activity-title" data-t="">${matched.name}</h2>
+        <p class="activity-description" data-t="">${matched.description}</p>
         <section class="images-box">
             <img class="image1" src="${matched.images.image1}">
             <img class="image2" src="${matched.images.image2}">
@@ -47,3 +47,8 @@ async function loadActivity() {
   }
 
   loadActivity();
+
+
+
+
+  

@@ -54,18 +54,40 @@
     color: #444;
   }
   
+  .images-box {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-auto-rows: minmax(100px, 20vh); /* Flexible row height */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.images-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+} 
   
-.images-box{
-    width: 60vw;
-    height: 70vh;
+/* .images-box{
+    width: 30vw;
+    height: 40vh;
     display: grid;
     gap: 0.5em;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: fit-content;
     margin: 0 auto;
+    
 }
 
+.images-box img {
+   
+} */
 .image1 {
     grid-column: 1 / 2;
     grid-row: 1 / 3;

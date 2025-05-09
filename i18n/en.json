@@ -1,0 +1,80 @@
+{
+    "activities": {
+      "hiking": {
+        "name": "Hiking",
+        "description": "Explore nature on foot through scenic trails, mountains, and forests."
+      },
+      "safari": {
+        "name": "Safari",
+        "description": "Experience wildlife up close in their natural habitat on guided expeditions."
+      },
+      "rafting": {
+        "name": "Rafting",
+        "description": "Ride the rapids and navigate exciting river currents with a team."
+      },
+      "ziplining": {
+        "name": "Ziplining",
+        "description": "Soar above the ground and enjoy thrilling aerial views of forests and landscapes."
+      },
+      "museums": {
+        "name": "Museums",
+        "description": "Discover art, history, and science through curated exhibits and collections."
+      },
+        "Cooking Classes": {
+          "name": "Cooking Classes",
+          "description": "Learn to prepare traditional dishes hands-on with local chefs and ingredients."
+        },
+        "Historic Sites": {
+          "name": "Historic Sites",
+          "description": "Visit landmarks that hold cultural and historical significance across regions."
+        },
+        "Hiking": {
+          "name": "Hiking",
+          "description": "Explore nature on foot through scenic trails, mountains, and forests."
+        },
+        "Ice Climbing": {
+          "name": "Ice Climbing",
+          "description": "Climb frozen waterfalls and ice walls using axes and crampons."
+        },
+        "Kayaking": {
+          "name": "Kayaking",
+          "description": "Paddle through rivers, lakes, or coastlines in a narrow watercraft."
+        },
+        "Local Festivals": {
+          "name": "Local Festivals",
+          "description": "Celebrate traditions, food, music, and arts with local communiies."
+        }, 
+            "skiing": {
+              "name": "Skiing",
+              "description": "Glide down snowy slopes and enjoy winter landscapes at ski resorts."
+            },
+            "snowboarding": {
+              "name": "Snowboarding",
+              "description": "Ride the snow with style and adrenaline on your snowboard."
+            },
+            "iceClimbing": {
+              "name": "Ice Climbing",
+              "description": "Climb frozen waterfalls and ice walls using axes and crampons."
+            },
+            "scubaDiving": {
+              "name": "Scuba Diving",
+              "description": "Dive deep underwater to explore marine life and coral reefs."
+            },
+            "surfing": {
+              "name": "Surfing",
+              "description": "Catch ocean waves and ride them to shore on a surfboard."
+            },
+            "snorkeling": {
+              "name": "Snorkeling",
+              "description": "Float on the surface and observe underwater life with a snorkel mask."
+            },
+            "kayaking": {
+              "name": "Kayaking",
+              "description": "Paddle through rivers, lakes, or coastlines in a narrow watercraft."
+            }
+          
+        }
+        
+    }
+  
+  

@@ -1,0 +1,142 @@
+@media (max-width: 600px) {
+    .page4 {
+      margin-top: 5rem; /* Reduce top margin */
+      margin-bottom: 1rem;
+      flex-direction: column;
+    }
+    
+    .page4 h1 {
+      font-size: 1.8rem; /* Smaller heading */
+      margin-left: 2rem;
+      width: 90%; /* Full width for the heading */
+      text-align: center; /* Center the heading on mobile */
+    }
+  
+    .container-world {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+  
+    .page4-circle-nav-wrapper {
+      width: 150px; /* Smaller circle */
+      height: 150px;
+    }
+  
+    .page4-image-center {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .page4-nav-bar {
+      width: 200px; /* Make nav smaller */
+      height: 200px;
+    }
+  
+    .circular-text-svg {
+      width: 100%;
+      height: 100%;
+      animation: none; /* Remove animation on mobile */
+    }
+  
+    .destination {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+  
+    .infoTravel {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .pituresGrid {
+      grid-template-columns: repeat(3, 1fr); /* Make grid 3 columns */
+      grid-template-rows: repeat(3, 1fr); /* Smaller grid */
+      max-width: 90%;
+    }
+  
+    .show {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .askme {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .chat-widget {
+      top: 130px; 
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .page4 {
+      margin-top: 30rem;
+    }
+  
+    .container-world {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+    }
+  
+    .page4 h1 {
+      font-size: 2rem;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .destination {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+  
+    .infoTravel {
+      width: 80%;
+    }
+  
+    .pituresGrid {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  
+    .show {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .askme {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  @media (max-width: 1024px) { 
+    .pituresGrid {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 90%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pituresGrid {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 95%; 
+    }
+  }
+  
+  @media (max-width: 600px) { 
+    .pituresGrid {
+      grid-template-columns: repeat(2, 1fr); 
+      max-width: 100%; 
+    }
+  }
