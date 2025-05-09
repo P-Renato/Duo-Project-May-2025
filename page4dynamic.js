@@ -33,10 +33,10 @@
       description: "From the serene temples of Kyoto to the vibrant markets of Bangkok, Asia is a journey through ancient traditions, diverse flavors, and awe-inspiring wonders.",
       banner: "Images/Logo/pics/asia-banner.jpg",
       images: [
-        "Images/Logo/pics/asia1.jpg",
-        "Images/Logo/pics/asia2.jpg",
-        "Images/Logo/pics/asia3.jpg",
-        "Images/Logo/pics/asiaMap.jpg"
+        "Images/Logo/pics/japan.jpg",
+        "Images/Logo/pics/seoul.jpeg",
+        "Images/Logo/pics/bankok.jpeg",
+        "Images/Logo/pics/cherrty.avif"
       ],
       quote: "“We lived an adventure that others can only dream of.”"
     },
@@ -46,10 +46,10 @@
       description: "From the turquoise waters of the Maldives to the lush jungles of the Caribbean, tropical islands offer sun-soaked serenity, vibrant cultures, and unforgettable moments in nature’s most stunning settings.",
       banner: "Images/Logo/pics/tropicals-banner.jpg",
       images: [
-        "Images/Logo/pics/trop1.jpg",
-        "Images/Logo/pics/trop2.jpg",
-        "Images/Logo/pics/trop3.jpg",
-        "Images/Logo/pics/tropMap.jpg"
+        "Images/Logo/pics/tropical1.jpeg",
+        "Images/Logo/pics/tropical2.avif",
+        "Images/Logo/pics/tropical3.jpg",
+        "Images/Logo/pics/coral.jpg"
       ],
       quote: "“We lived an adventure that others can only dream of.”"
     }
@@ -68,6 +68,7 @@
     info.classList.add('infoTravel');
   
     const h1 = document.createElement('h1');
+    h1.classList.add('infoTravelh1');
     h1.textContent = data.title;
   
     const h3 = document.createElement('h3');
