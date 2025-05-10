@@ -2,69 +2,79 @@
     "activities": {
       "hiking": {
         "name": "Wandern",
-        "description": "Erkunde die Natur zu Fuß auf malerischen Wegen, in Bergen und Wäldern."
+        "group": "Abenteuer",
+        "description": "Erkunde die Natur zu Fuß auf malerischen Wegen, Bergen und in Wäldern."
       },
       "safari": {
         "name": "Safari",
+        "group": "Abenteuer",
         "description": "Erlebe Wildtiere hautnah in ihrem natürlichen Lebensraum auf geführten Expeditionen."
       },
       "rafting": {
         "name": "Rafting",
-        "description": "Bezwinge Stromschnellen und navigiere mit einem Team durch aufregende Flüsse."
+        "group": "Abenteuer",
+        "description": "Fahre mit dem Team über Stromschnellen und spannende Flussströmungen."
       },
       "ziplining": {
         "name": "Ziplining",
-        "description": "Schwebe in der Luft und genieße atemberaubende Ausblicke auf Wälder und Landschaften."
+        "group": "Abenteuer",
+        "description": "Schwebe über dem Boden und genieße aufregende Ausblicke aus der Luft."
       },
       "museums": {
         "name": "Museen",
-        "description": "Entdecke Kunst, Geschichte und Wissenschaft in kuratierten Ausstellungen und Sammlungen."
-      }, 
-      
-        "activities": {
-          "historicSites": {
-            "name": "Historische Stätten",
-            "description": "Besuche Sehenswürdigkeiten von kultureller und historischer Bedeutung in verschiedenen Regionen."
-          },
-          "localFestivals": {
-            "name": "Lokale Festivals",
-            "description": "Feiere Traditionen, Essen, Musik und Kunst mit lokalen Gemeinschaften."
-          },
-          "cookingClasses": {
-            "name": "Kochkurse",
-            "description": "Lerne traditionelle Gerichte unter Anleitung lokaler Köche mit frischen Zutaten zuzubereiten."
-          },
-          "skiing": {
-            "name": "Skifahren",
-            "description": "Fahre verschneite Pisten hinunter und genieße Winterlandschaften in Skigebieten."
-          },
-          "snowboarding": {
-            "name": "Snowboarden",
-            "description": "Rutsche stilvoll über den Schnee und erlebe den Adrenalinkick beim Snowboarden."
-          },
-          "iceClimbing": {
-            "name": "Eisklettern",
-            "description": "Erklimme gefrorene Wasserfälle und Eiswände mit Eisäxten und Steigeisen."
-          },
-          "scubaDiving": {
-            "name": "Tauchen",
-            "description": "Tauche tief unter Wasser, um Meereslebewesen und Korallenriffe zu erkunden."
-          },
-          "surfing": {
-            "name": "Surfen",
-            "description": "Fange Meereswellen und reite sie mit dem Surfbrett bis ans Ufer."
-          },
-          "snorkeling": {
-            "name": "Schnorcheln",
-            "description": "Schwimme an der Wasseroberfläche und beobachte das Unterwasserleben mit einer Schnorchelmaske."
-          },
-          "kayaking": {
-            "name": "Kajakfahren",
-            "description": "Paddle durch Flüsse, Seen oder Küstengewässer in einem schmalen Wasserfahrzeug."
-          }
-        }
-      
-      
+        "group": "Kultur",
+        "description": "Entdecke Kunst, Geschichte und Wissenschaft in kuratierten Ausstellungen."
+      },
+      "historicSites": {
+        "name": "Historische Stätten",
+        "group": "Kultur",
+        "description": "Besuche Orte von kultureller und historischer Bedeutung in verschiedenen Regionen."
+      },
+      "localFestivals": {
+        "name": "Lokale Feste",
+        "group": "Kultur",
+        "description": "Feiere Traditionen, Essen, Musik und Kunst mit lokalen Gemeinschaften."
+      },
+      "cookingClasses": {
+        "name": "Kochkurse",
+        "group": "Kultur",
+        "description": "Lerne, traditionelle Gerichte mit lokalen Köchen und Zutaten selbst zuzubereiten."
+      },
+      "skiing": {
+        "name": "Skifahren",
+        "group": "Wintersport",
+        "description": "Fahre schneebedeckte Hänge hinunter und genieße die Winterlandschaften in Skigebieten."
+      },
+      "snowboarding": {
+        "name": "Snowboarden",
+        "group": "Wintersport",
+        "description": "Rutsche mit Stil und Adrenalin über den Schnee auf deinem Snowboard."
+      },
+      "iceClimbing": {
+        "name": "Eisklettern",
+        "group": "Wintersport",
+        "description": "Besteige gefrorene Wasserfälle und Eiswände mit Eispickeln und Steigeisen."
+      },
+      "scubaDiving": {
+        "name": "Tauchen",
+        "group": "Wassersport",
+        "description": "Tauche tief unter Wasser, um Meereslebewesen und Korallenriffe zu erkunden."
+      },
+      "surfing": {
+        "name": "Surfen",
+        "group": "Wassersport",
+        "description": "Reite auf den Meereswellen mit einem Surfbrett bis zum Ufer."
+      },
+      "snorkeling": {
+        "name": "Schnorcheln",
+        "group": "Wassersport",
+        "description": "Schwebe an der Wasseroberfläche und beobachte das Leben unter Wasser mit einer Schnorchelmaske."
+      },
+      "kayaking": {
+        "name": "Kajakfahren",
+        "group": "Wassersport",
+        "description": "Paddle durch Flüsse, Seen oder entlang der Küste in einem schmalen Boot."
+      }
     }
   }
   
