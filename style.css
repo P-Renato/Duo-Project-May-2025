@@ -7,8 +7,8 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1em 2em;
-height: 20vh;
+padding: 0.2rem 2rem;
+
 width: 100%;
 background-color: #ffffff;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -16,14 +16,15 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 nav {
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 gap: 1.5em;
 }
 
 nav img {
-width: 3em;
-height: 3em;
-object-fit: contain;
+width: 6rem;
+height: 5rem;
+border-radius: 2rem;
 }
 
 nav a {
