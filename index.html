@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Touring Around</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="travel.css">
@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Serif:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Vast+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="flyPlane.css">
+    <link rel="stylesheet" href="page4mobile.css">
+  
+    <title>Touring Around</title>
   </head>
 <body>
       <section class="page1">
@@ -251,48 +254,11 @@
         </nav>
        
       </div>
-      <h1>Explore the Most Desired Destinations</h1>
+      <h1 class="text">Explore the Most Desired Destinations</h1>
     </div>
-      <div class="destination" id="europe">
-      
-        <div class="infoTravel"> 
-         
-          <h1>Europe</h1>
-          <h3>Your unforgettable journey begins here.</h3>
-          <p>From the romantic streets of Paris to the sun-kissed beaches of Greece, Europe is a mosaic of cultures, flavors, and unforgettable moments.</p>
+     
+      <div class="destination" id="destinationContainer"></div>
 
-           <div class="features">
-              <span class="feature"><i class="fas fa-bed"></i> Hotel</span>
-              <span class="feature"><i class="fas fa-plane"></i> Flight</span>
-              <span class="feature"><i class="fas fa-car"></i> Transport</span>
-              <span class="feature"><i class="fas fa-utensils"></i> Restaurant</span>
-              <span class="feature"><i class="fas fa-map-marked-alt"></i> Guide</span>
-            </div>
-            <p>Plan everything in one place – simple, fast, and stress-free.</p>
-
-            <p><strong>Traveler’s Words:</strong> “We lived an adventure that others can only dream of.”</p>
-         <div class="review">   
-         <img class="round" src="Images/Logo/pics/emoji1.webp" alt="happy">
-            <audio controls>
-              <source src="review-audio.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-        
-            <div class="imageSide">
-              <img src="Images/Logo/pics/europe-banner.jpg" alt="Europe view" class="banner">
-            </div>
-          </div>   
-        </div> 
-
-      
-       <div class="pituresGrid" >     
-            <img class="show item1" src="Images/Logo/pics/coloseum.jpg" alt="europe1">
-            <img class="show item2" src="Images/Logo/pics/Eiffel-Tower-Europe.webp" alt="europe2">
-            <img class="show item3" src="Images/Logo/pics/IMG_7778.jpg" alt="europe3">
-            <img class="show item4" src="Images/Logo/pics/europeMap.jpg" alt="europe4"> 
-       </div>    
-      </div>
- 
     </section>
 
     <div class="chat-widget" onclick="openChat()">
@@ -310,10 +276,11 @@
 
         <script src="slider.js"></script>  
         <script src="travel.js"></script>
-        <script src="flyPlane.js"></script>
+        <script src="page4dynamic.js"></script>
 
-        <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
-
+        <script src="https://unpkg.com/i18next@22.4.10/i18next.min.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+        
       <script src="main.js"></script>
 </body>
 </html>

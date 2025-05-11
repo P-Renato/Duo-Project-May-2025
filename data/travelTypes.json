@@ -1,0 +1,146 @@
+[
+    {
+        "id": 30,
+        "name": "Solo Travel",
+        "group": "By Group",
+        "description": "Experience complete freedom to explore at your own pace. Meet new people, discover yourself, and create personal adventures without compromise. Perfect for self-reflection and spontaneous detours to hidden gems most groups miss.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Solo/gerson-repreza-JRpq0AvlF-g-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Solo/ashley-batz-betmVWGYcLY-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Solo/emma-simpson-mNGaaLeWEp0-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Solo/yoann-boyer-i14h2xyPr18-unsplash.jpg"
+        }
+    },
+    {
+        "id": 32,
+        "name": "Couples",
+        "group": "By Group",
+        "description": "Romantic getaways designed for two, featuring intimate experiences from sunset cruises to private dining. Rekindle connections in luxurious settings with couple-focused activities and premium accommodations tailored for lovebirds.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Couples/nathan-dumlao-w5hhoYM_JsU-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Couples/khamkeo-OcxlTBbb6SY-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Couples/peijia-li-F5_Tt-AvGJw-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Couples/toomas-tartes-Yizrl9N_eDA-unsplash.jpg"
+        }
+    },
+    {
+        "id": 33,
+        "name": "Family",
+        "group": "By Group",
+        "description": "Stress-free vacations with activities for all ages, from toddler-friendly beaches to teen-approved adventures. Family resorts with kids' clubs, connecting rooms, and educational experiences that create lifelong memories together.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Family/nathan-dumlao-4_mJ1TbMK8A-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Family/hillshire-farm-YGcleYb9wEQ-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Family/jessica-rockowitz-6c4Uhhe68yQ-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Family/photo-nic-xOigCUcFdA8-unsplash.jpg"
+        }
+    },
+    {
+        "id": 34,
+        "name": "Friends",
+        "group": "By Group",
+        "description": "Group adventures designed for shared experiences, from party hostels to group tours. Perfect for reunions, bachelor/bachelorette trips, or just creating unforgettable stories with your closest friends.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Friends/joel-muniz-0QuIgOjLLXc-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Friends/felix-rostig-UmV2wr-Vbq8-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Friends/helena-lopes-PGnqT0rXWLs-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Friends/mike-scheid-0iqkntLw93A-unsplash.jpg"
+        }
+    },
+    {
+        "id": 35,
+        "name": "Wellness",
+        "group": "By Theme",
+        "description": "Rejuvenating retreats focusing on mental and physical wellbeing. Includes yoga sessions, spa treatments, meditation workshops, and healthy cuisine in serene environments designed for complete relaxation and renewal.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Wellness/adrian-motroc-87InWldRhgs-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Wellness/jared-rice-xce530fBHrk-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Wellness/jeremy-thomas-FO7bKvgETgQ-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Wellness/kaylee-garrett-GaprWyIw66o-unsplash.jpg"
+        }
+    },
+    {
+        "id": 36,
+        "name": "Food & Wine",
+        "group": "By Theme",
+        "description": "Culinary journeys featuring cooking classes with local chefs, vineyard tours, market visits, and exclusive dining experiences. Discover regional flavors and gastronomic traditions from passionate food artisans.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Food-and-Wine/serjan-midili-LavGkxbnR-8-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Food-and-Wine/daniel-silva-gaxiola-RCBujfQWH-c-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Food-and-Wine/travis-fish-qsrl9UsAsBo-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Food-and-Wine/yoav-aziz-jSejdh27tnM-unsplash.jpg"
+        }
+    },
+    {
+        "id": 37,
+        "name": "Honeymoon",
+        "group": "By Theme",
+        "description": "Luxurious romantic escapes with private villas, couple's massages, and exclusive experiences. Includes champagne breakfasts, secluded beaches, and personalized services to celebrate your new life together.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Honeymoon/jonathan-borba-Fa8xXVzkkXc-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Honeymoon/darren-lawrence-EpeNGhitrlc-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Honeymoon/ismail-mohamed-sovile-u7qgO97JAEo-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Honeymoon/yoann-boyer-VZSIm_cNAL8-unsplash.jpg"
+        }
+    },
+    {
+        "id": 38,
+        "name": "Volunteering",
+        "group": "By Theme",
+        "description": "Meaningful trips combining travel with giving back. Participate in wildlife conservation, community development, or teaching projects while immersing yourself in local cultures and creating positive impact.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Vollunteering/ocg-saving-the-ocean-psRG_u3DLps-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Vollunteering/christy-joseph-jacob-Mh-R3YrrHT8-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Vollunteering/joel-muniz-A4Ax1ApccfA-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Vollunteering/the-tampa-bay-estuary-program-CxL29J-aM5E-unsplash.jpg"
+        }
+    },
+    {
+        "id": 39,
+        "name": "Summer Holidays",
+        "group": "Seasonal",
+        "description": "Sun-drenched adventures featuring beach resorts, water sports, and outdoor festivals. Enjoy long days exploring coastal towns, swimming in crystal waters, and dining under the stars.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Summer/ryan-spencer-XGKaRnWjv1c-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Summer/ethan-robertson-SYx3UCHZJlo-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Summer/mathieu-lesniak-HW7Zj72QhM4-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Summer/vidar-nordli-mathisen-yxwBJjtgtUs-unsplash.jpg"
+        }
+    },
+    {
+        "id": 40,
+        "name": "Winter Getaways",
+        "group": "Seasonal",
+        "description": "Cozy mountain lodges, snowy landscapes, and après-ski relaxation. Includes skiing, snowboarding, thermal baths, and charming winter villages with festive markets and warm drinks.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Winter/daniel-plan-XEag_k0KCE8-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Winter/calin-razvan-fotograf-zrd6RO0yCVU-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Winter/j-b-9GCs5RAqa9w-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Winter/thomas-tucker-ErhE7V7BTiA-unsplash.jpg"
+        }
+    },
+    {
+        "id": 41,
+        "name": "Spring Break",
+        "group": "Seasonal",
+        "description": "Energetic group trips featuring beach parties, pool clubs, and non-stop entertainment. Popular destinations with vibrant nightlife, daytime excursions, and budget-friendly packages for students.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/Spring-Break/colynary-media-MrY-ZlUfKBM-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/Spring-Break/angela-compagnone-DUngkjzKp8w-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/Spring-Break/trend-341OczdirBM-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/Spring-Break/wells-baum-QUHvd8BBZPU-unsplash.jpg"
+        }
+    },
+    {
+        "id": 42,
+        "name": "Christmas Markets",
+        "group": "Seasonal",
+        "description": "Festive trips through Europe's magical Christmas markets, featuring handmade crafts, mulled wine, and seasonal treats. Experience snow-covered towns, light displays, and traditional holiday celebrations.",
+        "images": {
+            "image1": "Images/Logo/jsonImages/Travel-Types/X-mas/hert-niks-KzOMu0MvtBQ-unsplash.jpg",
+            "image2": "Images/Logo/jsonImages/Travel-Types/X-mas/alexandra-tR0p-qvuxXM-unsplash.jpg",
+            "image3": "Images/Logo/jsonImages/Travel-Types/X-mas/cmophoto-net-_BI9XSA-BvQ-unsplash.jpg",
+            "image4": "Images/Logo/jsonImages/Travel-Types/X-mas/daniil-silantev-PKzkV7rVcJg-unsplash.jpg"
+        }
+    }
+]

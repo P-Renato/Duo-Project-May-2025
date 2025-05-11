@@ -1,0 +1,60 @@
+{
+    "nav": {
+      "destination": "Destination",
+      "europe": "Europe",
+      "asia": "Asia",
+      "southAmerica": "South America",
+      "activities": "Activities",
+      "travelTypes": "Travel Types"
+    },
+    "navItems": {
+      "europe": {
+        "france": "France",
+        "italy": "Italy",
+        "germany": "Germany",
+        "spain": "Spain"
+      },
+      "asia": {
+        "japan": "Japan",
+        "thailand": "Thailand",
+        "china": "China",
+        "southKorea": "South Korea"
+      },
+      "southAmerica": {
+        "brazil": "Brazil",
+        "argentina": "Argentina",
+        "peru": "Peru",
+        "colombia": "Colombia"
+      },
+      "activities": {
+        "adventure": "Adventure",
+        "water": "Water Sports",
+        "cultural": "Cultural",
+        "winter": "Winter Sports"
+      },
+      "travelTypes": {
+        "byGroup": "By Group",
+        "byTheme": "By Theme",
+        "seasonal": "Seasonal"
+      }
+    },
+    "group": {
+      "solo": "Solo Travel",
+      "couples": "Couples",
+      "family": "Family",
+      "friends": "Friends"
+    },
+    "theme": {
+      "wellness": "Wellness",
+      "food": "Food & Wine",
+      "honeymoon": "Honeymoon",
+      "volunteering": "Volunteering"
+    },
+    "season": {
+      "summer": "Summer Holidays",
+      "winter": "Winter Getaways",
+      "spring": "Spring Break",
+      "christmas": "Christmas Markets"
+    }
+  }
+  
