@@ -6,11 +6,11 @@ function createWord() {
   span.classList.add('word');
   span.innerText = words[Math.floor(Math.random() * words.length)];
 
-  // Random position
+ 
   span.style.top = Math.random() * 100 + 'vh';
   span.style.left = Math.random() * 100 + 'vw';
 
-  // Random size and opacity
+ 
   const size = (Math.random() * 2 + 1).toFixed(2);
   span.style.fontSize = size + 'rem';
   span.style.opacity = (Math.random() * 0.7 + 0.1).toFixed(2);
@@ -34,7 +34,7 @@ function createWord() {
   });
 }
 
-// Create 30 words
+// Create 50 words
 for (let i = 0; i < 50; i++) {
   createWord();
 }
