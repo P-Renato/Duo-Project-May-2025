@@ -66,36 +66,36 @@
       <div class="dropdown-column">
         <h4><a href="#adventure" data-t="navItems.activities.adventure">Adventure</a></h4>
         <ul>
-          <li><a href="activity.html?activity=Hiking" data-t="activities.hiking">Hiking</a></li>
-          <li><a href="activity.html?activity=Safari" data-t="activities.safari">Safari</a></li>
-          <li><a href="activity.html?activity=Rafting" data-t="activities.rafting">Rafting</a></li>
-          <li><a href="activity.html?activity=Ziplining" data-t="activities.ziplining">Ziplining</a></li>
+          <li><a href="activity.html?activity=Hiking" data-t="activities.hiking.name">Hiking</a></li>
+          <li><a href="activity.html?activity=Safari" data-t="activities.safari.name">Safari</a></li>
+          <li><a href="activity.html?activity=Rafting" data-t="activities.rafting.name">Rafting</a></li>
+          <li><a href="activity.html?activity=Ziplining" data-t="activities.ziplining.name">Ziplining</a></li>
         </ul>
       </div>
       <div class="dropdown-column">
         <h4><a href="#water" data-t="navItems.activities.water">Water Sports</a></h4>
         <ul>
-          <li><a href="activity.html?activity=Scuba%20Diving" data-t="activities.scuba">Scuba Diving</a></li>
-          <li><a href="activity.html?activity=Surfing" data-t="activities.surfing">Surfing</a></li>
-          <li><a href="activity.html?activity=Snorkeling" data-t="activities.snorkeling">Snorkeling</a></li>
-          <li><a href="activity.html?activity=Kayaking" data-t="activities.kayaking">Kayaking</a></li>
+          <li><a href="activity.html?activity=Scuba%20Diving" data-t="activities.scubaDiving.name">Scuba Diving</a></li>
+          <li><a href="activity.html?activity=Surfing" data-t="activities.surfing.name">Surfing</a></li>
+          <li><a href="activity.html?activity=Snorkeling" data-t="activities.snorkeling.name">Snorkeling</a></li>
+          <li><a href="activity.html?activity=Kayaking" data-t="activities.kayaking.name">Kayaking</a></li>
         </ul>
       </div>
       <div class="dropdown-column">
         <h4><a href="#cultural" data-t="navItems.activities.cultural">Cultural</a></h4>
         <ul>
-          <li><a href="activity.html?activity=Museums" data-t="activities.museums">Museums</a></li>
-          <li><a href="activity.html?activity=Historic%20Sites" data-t="activities.historicSites">Historic Sites</a></li>
-          <li><a href="activity.html?activity=Local%20Festivals" data-t="activities.festivals">Local Festivals</a></li>
-          <li><a href="activity.html?activity=Cooking%20Classes" data-t="activities.cooking">Cooking Classes</a></li>
+          <li><a href="activity.html?activity=Museums" data-t="activities.museums.name">Museums</a></li>
+          <li><a href="activity.html?activity=Historic%20Sites" data-t="activities.historicSites.name">Historic Sites</a></li>
+          <li><a href="activity.html?activity=Local%20Festivals" data-t="activities.localFestivals.name">Local Festivals</a></li>
+          <li><a href="activity.html?activity=Cooking%20Classes" data-t="activities.cookingClasses.name">Cooking Classes</a></li>
         </ul>
       </div>
       <div class="dropdown-column">
         <h4><a href="#winter" data-t="navItems.activities.winter">Winter Sports</a></h4>
         <ul>
-          <li><a href="activity.html?activity=Skiing" data-t="activities.skiing">Skiing</a></li>
-          <li><a href="activity.html?activity=Snowboarding" data-t="activities.snowboarding">Snowboarding</a></li>
-          <li><a href="activity.html?activity=Ice%20Climbing" data-t="activities.iceClimbing">Ice Climbing</a></li>
+          <li><a href="activity.html?activity=Skiing" data-t="activities.skiing.name">Skiing</a></li>
+          <li><a href="activity.html?activity=Snowboarding" data-t="activities.snowboarding.name">Snowboarding</a></li>
+          <li><a href="activity.html?activity=Ice%20Climbing" data-t="activities.iceClimbing.name">Ice Climbing</a></li>
         </ul>
       </div>
     </div>
@@ -170,8 +170,10 @@
         </div>
 
 
-      <script src="https://unpkg.com/i18next@21.6.16/dist/umd/i18next.min.js"></script>
-      <script src="main.js"></script>
+        <script src="https://unpkg.com/i18next@22.4.10/i18next.min.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+      
+      <script type="module" src="main.js"></script>
       
   <script type="module" src="activity.js"></script>
 
@@ -179,50 +181,3 @@
 </html>
 
 
-<!-- 
-<div class="dropdown">
-    <a href="#" class="open-search">Activities</a>
-    <div class="dropdown-menu activities-menu">
-      
-      <div class="dropdown-column">
-        <h4><a href="">Adventure</a></h4>
-        <ul>
-          <li><a href="activity.html?activity=Hiking">Hiking</a></li>
-          <li><a href="activity.html?activity=Safari">Safari</a></li>
-          <li><a href="activity.html?activity=Rafting">Rafting</a></li>
-          <li><a href="activity.html?activity=Ziplining">Ziplining</a></li>
-        </ul>
-      </div>
-      
-      <div class="dropdown-column">
-        <h4><a href="">Water Sports</a></h4>
-        <ul>
-          <li><a href="activity.html?activity=Scuba%20Diving">Scuba Diving</a></li>
-          <li><a href="activity.html?activity=Surfing">Surfing</a></li>
-          <li><a href="activity.html?activity=Snorkeling">Snorkeling</a></li>
-          <li><a href="activity.html?activity=Kayaking">Kayaking</a></li>
-        </ul>
-      </div>
-      
-      <div class="dropdown-column">
-        <h4><a href="">Cultural</a></h4>
-        <ul>
-          <li><a href="activity.html?activity=Museums">Museums</a></li>
-          <li><a href="activity.html?activity=Historic%20Sites">Historic Sites</a></li>
-          <li><a href="activity.html?activity=Local%20Festivals">Local Festivals</a></li>
-          <li><a href="activity.html?activity=Cooking%20Classes">Cooking Classes</a></li>
-        </ul>
-      </div>
-      
-      <div class="dropdown-column">
-        <h4><a href="">Winter Sports</a></h4>
-        <ul>
-          <li><a href="activity.html?activity=Skiing">Skiing</a></li>
-          <li><a href="activity.html?activity=Snowboarding">Snowboarding</a></li>
-          <li><a href="activity.html?activity=Ice%20Climbing">Ice Climbing</a></li>
-        </ul>
-      </div>
-      
-
-    </div>
-  </div> -->
