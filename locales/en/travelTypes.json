@@ -1,0 +1,65 @@
+{
+    "travelTypes": {
+      "soloTravel": {
+        "name": "Solo Travel",
+        "group": "By Group",
+        "description": "Experience complete freedom to explore at your own pace. Meet new people, discover yourself, and create personal adventures without compromise. Perfect for self-reflection and spontaneous detours to hidden gems most groups miss."
+      },
+      "couples": {
+        "name": "Couples",
+        "group": "By Group",
+        "description": "Romantic getaways designed for two, featuring intimate experiences from sunset cruises to private dining. Rekindle connections in luxurious settings with couple-focused activities and premium accommodations tailored for lovebirds."
+      },
+      "family": {
+        "name": "Family",
+        "group": "By Group",
+        "description": "Stress-free vacations with activities for all ages, from toddler-friendly beaches to teen-approved adventures. Family resorts with kids' clubs, connecting rooms, and educational experiences that create lifelong memories together."
+      },
+      "friends": {
+        "name": "Friends",
+        "group": "By Group",
+        "description": "Group adventures designed for shared experiences, from party hostels to group tours. Perfect for reunions, bachelor/bachelorette trips, or just creating unforgettable stories with your closest friends."
+      },
+      "wellness": {
+        "name": "Wellness",
+        "group": "By Theme",
+        "description": "Rejuvenating retreats focusing on mental and physical wellbeing. Includes yoga sessions, spa treatments, meditation workshops, and healthy cuisine in serene environments designed for complete relaxation and renewal."
+      },
+      "foodAndWine": {
+        "name": "Food & Wine",
+        "group": "By Theme",
+        "description": "Culinary journeys featuring cooking classes with local chefs, vineyard tours, market visits, and exclusive dining experiences. Discover regional flavors and gastronomic traditions from passionate food artisans."
+      },
+      "honeymoon": {
+        "name": "Honeymoon",
+        "group": "By Theme",
+        "description": "Luxurious romantic escapes with private villas, couple's massages, and exclusive experiences. Includes champagne breakfasts, secluded beaches, and personalized services to celebrate your new life together."
+      },
+      "volunteering": {
+        "name": "Volunteering",
+        "group": "By Theme",
+        "description": "Meaningful trips combining travel with giving back. Participate in wildlife conservation, community development, or teaching projects while immersing yourself in local cultures and creating positive impact."
+      },
+      "summerHolidays": {
+        "name": "Summer Holidays",
+        "group": "Seasonal",
+        "description": "Sun-drenched adventures featuring beach resorts, water sports, and outdoor festivals. Enjoy long days exploring coastal towns, swimming in crystal waters, and dining under the stars."
+      },
+      "winterGetaways": {
+        "name": "Winter Getaways",
+        "group": "Seasonal",
+        "description": "Cozy mountain lodges, snowy landscapes, and après-ski relaxation. Includes skiing, snowboarding, thermal baths, and charming winter villages with festive markets and warm drinks."
+      },
+      "springBreak": {
+        "name": "Spring Break",
+        "group": "Seasonal",
+        "description": "Energetic group trips featuring beach parties, pool clubs, and non-stop entertainment. Popular destinations with vibrant nightlife, daytime excursions, and budget-friendly packages for students."
+      },
+      "christmasMarkets": {
+        "name": "Christmas Markets",
+        "group": "Seasonal",
+        "description": "Festive trips through Europe's magical Christmas markets, featuring handmade crafts, mulled wine, and seasonal treats. Experience snow-covered towns, light displays, and traditional holiday celebrations."
+      }
+    }
+  }
+  

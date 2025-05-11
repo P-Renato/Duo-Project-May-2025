@@ -1,41 +1,29 @@
 async function loadTravelTypeContent() {
   const urlParams = new URLSearchParams(window.location.search);
-  const travelTypeParam = urlParams.get('travelType');
-  
-  if (!travelTypeParam) {
-    console.error('No travelType parameter found');
-    return;
-  }
-
-  const travelType = decodeURIComponent(travelTypeParam);
+  const travelType = decodeURIComponent(urlParams.get('travelType'));
   const contentDiv = document.getElementById('content');
 
   try {
     const response = await fetch('data/travelTypes.json');
     const travelTypes = await response.json();
     
-    // Debug: Log the loaded data and search parameter
-    console.log('Loaded travelTypes:', travelTypes);
-    console.log('Searching for:', travelType.toLowerCase());
-
+    // Find matching travel type (case-insensitive)
     const matched = travelTypes.find(item => 
       item.name.toLowerCase() === travelType.toLowerCase()
     );
 
     if (!matched) {
-      console.warn('No match found for:', travelType);
       contentDiv.innerHTML = `<p class="not-found">Travel type "${travelType}" not found.</p>`;
       return;
     }
 
-    console.log('Matched travel type:', matched);
-    
-    // Use simpler keys for debugging
+    // Set title and generate identical HTML structure as activity.js
+    document.title = matched.name;
     contentDiv.innerHTML = `
-      <h1 class="travel-type-group">${matched.group}</h1>
-      <section class="travel-type-box">
-        <h2 class="travel-type-title">${matched.name}</h2>
-        <p class="travel-type-description">${matched.description}</p>
+      <h1 class="activity-group" data-t="travelTypes.${matched.id}.group">${matched.group}</h1>
+      <section class="activity-box">
+        <h2 class="activity-title" data-t="travelTypes.${matched.id}.name">${matched.name}</h2>
+        <p class="activity-description" data-t="travelTypes.${matched.id}.description">${matched.description}</p>
         <section class="images-box">
           ${[1,2,3,4].map(i => 
             `<img class="image${i}" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
@@ -43,12 +31,8 @@ async function loadTravelTypeContent() {
         </section>
       </section>
     `;
-
-    // Add data-t attributes after content is loaded
-    document.querySelector('.travel-type-group').setAttribute('data-t', `travelTypes.${matched.id}.group`);
-    document.querySelector('.travel-type-title').setAttribute('data-t', `travelTypes.${matched.id}.name`);
-    document.querySelector('.travel-type-description').setAttribute('data-t', `travelTypes.${matched.id}.description`);
     
+    // Apply translations
     translateAll();
   } catch (err) {
     console.error('Error loading travel type:', err);
@@ -56,8 +40,7 @@ async function loadTravelTypeContent() {
   }
 }
 
-
-
-
-
-  
+// Initialize only if URL has ?travelType=
+if (new URLSearchParams(window.location.search).has('travelType')) {
+  loadTravelTypeContent();
+}
