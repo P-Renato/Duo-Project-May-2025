@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="page4mobile.css">
   <link rel="stylesheet" href="backgroundsWords.css">
   <link rel="stylesheet" href="personReview.css">
-
+  <link rel="stylesheet" href="booking.css">
 
   <title>Touring Around</title>
 </head>
@@ -223,8 +223,50 @@
     <div class="slider">
       <div class="slider-track"> </div>
     </div>
+  
+    <!-- here start the booking form -->
 
-    <button class="slideBtn"> plan your jorney</button>
+    <button class="slideBtn"> Booking</button>
+         
+   <div id="bookingForm" style="display: none;">
+  
+    <h3>Booking Form</h3>
+  
+  <form id="form">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="adults">Adults:</label>
+    <input type="number" id="adults" min="1" required><br>
+
+    <label for="children">Children:</label>
+    <input type="number" id="children" min="0" required><br>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" required><br>
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" required><br>
+
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" required><br>
+
+    <label for="budget">Budget (total):</label>
+    <input type="number" id="budget" min="0" required><br>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+</div>
+
+<!-- table for booking in booking.html-->
+
+<a href="booking.html">View All Bookings →</a>
 
   </section>
 
@@ -366,6 +408,7 @@
   <script src="main.js"></script>
   <script src="backgroundWords.js"></script>
   <script src="personReview.js"></script>
+  <script src="booking.js"></script>
 </body>
 
 </html>
