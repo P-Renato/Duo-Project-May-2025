@@ -1,0 +1,27 @@
+#background-words {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -4;
+    pointer-events: none;
+
+  }
+  
+  .word {
+    position: absolute;
+    font-size: 2rem;
+     
+    color: rgb(97, 155, 209);
+    white-space: nowrap;
+    transition: transform 1s linear;
+    animation: float 10s infinite linear;
+  }
+  
+  
+   @keyframes float {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-100vh); }
+  } 
