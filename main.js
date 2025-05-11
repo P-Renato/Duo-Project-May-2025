@@ -32,6 +32,14 @@ function translateAll() {
   });
 }
 
+const activityKey = "scubaDiving"; // dynamically determined
+const matched = {
+  group: `activities.${activityKey}.group`,
+  name: `activities.${activityKey}.name`,
+  description: `activities.${activityKey}.description`,
+  images: activityData[activityKey].images
+};
+
 
 
 const fetchTranslations = async () => {
@@ -121,6 +129,9 @@ if (switcher) {
 
 console.log("i18next language:", i18next.language);
 console.log("Translation test:", i18next.t("activities.hiking.name"));
+
+document.querySelector(".activity-container").innerHTML = html;
+translateAll(); // re-run i18next translation
 
 
 // 5. Optional: Modal open/close handlers
