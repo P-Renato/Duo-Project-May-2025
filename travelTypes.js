@@ -1,69 +1,63 @@
-async function loadActivity() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const activityName = urlParams.get('activity');
+async function loadTravelTypeContent() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const travelTypeParam = urlParams.get('travelType');
+  
+  if (!travelTypeParam) {
+    console.error('No travelType parameter found');
+    return;
+  }
 
-    const contentDiv = document.getElementById('content');
+  const travelType = decodeURIComponent(travelTypeParam);
+  const contentDiv = document.getElementById('content');
 
-    if (!activityName) {
-      contentDiv.innerHTML = '<p class="not-found">No activity specified.</p>';
+  try {
+    const response = await fetch('data/travelTypes.json');
+    const travelTypes = await response.json();
+    
+    // Debug: Log the loaded data and search parameter
+    console.log('Loaded travelTypes:', travelTypes);
+    console.log('Searching for:', travelType.toLowerCase());
+
+    const matched = travelTypes.find(item => 
+      item.name.toLowerCase() === travelType.toLowerCase()
+    );
+
+    if (!matched) {
+      console.warn('No match found for:', travelType);
+      contentDiv.innerHTML = `<p class="not-found">Travel type "${travelType}" not found.</p>`;
       return;
     }
 
-    try {
-      const response = await fetch('data/travelTypes.json'); // Make sure this is in the same folder
-      const data = await response.json();
+    console.log('Matched travel type:', matched);
+    
+    // Use simpler keys for debugging
+    contentDiv.innerHTML = `
+      <h1 class="travel-type-group">${matched.group}</h1>
+      <section class="travel-type-box">
+        <h2 class="travel-type-title">${matched.name}</h2>
+        <p class="travel-type-description">${matched.description}</p>
+        <section class="images-box">
+          ${[1,2,3,4].map(i => 
+            `<img class="image${i}" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
+          ).join('')}
+        </section>
+      </section>
+    `;
 
-      console.log(data)
-
-      
-      // Flatten the data into a single array of activities
-      const allActivities = Object.values(data).flat();
-
-      const matched = allActivities.find(item => item.name.toLowerCase() === activityName.toLowerCase());
-
-      if (!matched) {
-        contentDiv.innerHTML = `<p class="not-found">Activity "${activityName}" not found.</p>`;
-        return;
-      }
-
-      document.title = matched.name;
-      contentDiv.innerHTML = `
-<h1 class="activity-group" data-t="${matched.group}.group">${i18next.t(matched.group)}</h1>
-  <section class="activity-box">
-    <h2 class="activity-title" data-t="${matched.name}.name">${i18next.t(matched.name)}</h2>
-    <p class="activity-description" data-t="${matched.description}.description">${i18next.t(matched.description)}</p>
-    <section class="images-box">
-      <img class="image1" src="${matched.images.image1}">
-      <img class="image2" src="${matched.images.image2}">
-      <img class="image3" src="${matched.images.image3}">
-      <img class="image4" src="${matched.images.image4}">
-    </section>
-  </section>
-
-      `;
-    } catch (err) {
-      console.error('Error fetching activities.json:', err);
-      contentDiv.innerHTML = '<p class="not-found">Failed to load activity data.</p>';
-    }
+    // Add data-t attributes after content is loaded
+    document.querySelector('.travel-type-group').setAttribute('data-t', `travelTypes.${matched.id}.group`);
+    document.querySelector('.travel-type-title').setAttribute('data-t', `travelTypes.${matched.id}.name`);
+    document.querySelector('.travel-type-description').setAttribute('data-t', `travelTypes.${matched.id}.description`);
+    
+    translateAll();
+  } catch (err) {
+    console.error('Error loading travel type:', err);
+    contentDiv.innerHTML = '<p class="not-found">Failed to load travel type data.</p>';
   }
+}
 
-  loadActivity();
 
 
 
 
   
-
-/**
-       <h1 class="activity-group" data-t="">${matched.group}</h1>
-      <section class="activity-box">
-        <h2 class="activity-title" data-t="">${matched.name}</h2>
-        <p class="activity-description" data-t="">${matched.description}</p>
-        <section class="images-box">
-            <img class="image1" src="${matched.images.image1}">
-            <img class="image2" src="${matched.images.image2}">
-            <img class="image3" src="${matched.images.image3}">
-            <img class="image4" src="${matched.images.image4}">
-        </section>
-      </section>
- */
