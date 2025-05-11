@@ -13,7 +13,7 @@ function createWord() {
   // Random size and opacity
   const size = (Math.random() * 2 + 1).toFixed(2);
   span.style.fontSize = size + 'rem';
-  span.style.opacity = (Math.random() * 0.6 + 0.1).toFixed(2);
+  span.style.opacity = (Math.random() * 0.7 + 0.1).toFixed(2);
 
  
   container.appendChild(span);
@@ -35,6 +35,6 @@ function createWord() {
 }
 
 // Create 30 words
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 50; i++) {
   createWord();
 }
