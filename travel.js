@@ -15,3 +15,6 @@ function showDestination(name) {
   function closeChat() {
     document.getElementById('chat-box').style.display = 'none';
   }
+
+
+
