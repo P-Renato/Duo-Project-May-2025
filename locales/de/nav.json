@@ -1,0 +1,60 @@
+{
+    "nav": {
+      "destination": "Reiseziel",
+      "europe": "Europa",
+      "asia": "Asien",
+      "southAmerica": "Südamerika",
+      "activities": "Aktivitäten",
+      "travelTypes": "Reisearten"
+    },
+    "navItems": {
+      "europe": {
+        "france": "Frankreich",
+        "italy": "Italien",
+        "germany": "Deutschland",
+        "spain": "Spanien"
+      },
+      "asia": {
+        "japan": "Japan",
+        "thailand": "Thailand",
+        "china": "China",
+        "southKorea": "Südkorea"
+      },
+      "southAmerica": {
+        "brazil": "Brasilien",
+        "argentina": "Argentinien",
+        "peru": "Peru",
+        "colombia": "Kolumbien"
+      },
+      "activities": {
+        "adventure": "Abenteuer",
+        "water": "Wassersport",
+        "cultural": "Kulturell",
+        "winter": "Wintersport"
+      },
+      "travelTypes": {
+        "byGroup": "Nach Gruppe",
+        "byTheme": "Nach Thema",
+        "seasonal": "Saisonal"
+      }
+    },
+    "group": {
+      "solo": "Alleinreisende",
+      "couples": "Paare",
+      "family": "Familien",
+      "friends": "Freunde"
+    },
+    "theme": {
+      "wellness": "Wellness",
+      "food": "Essen & Wein",
+      "honeymoon": "Flitterwochen",
+      "volunteering": "Freiwilligenarbeit"
+    },
+    "season": {
+      "summer": "Sommerurlaub",
+      "winter": "Winterurlaub",
+      "spring": "Frühlingsferien",
+      "christmas": "Weihnachtsmärkte"
+    }
+  }
+  

@@ -1,0 +1,77 @@
+.personReview{
+  margin-top:2rem ;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.personReview h1{
+    font-size: 2rem;
+}
+.reviewContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5rem;
+    transition: gap 0.5s ease;
+}
+
+
+.reviwPeople{
+    width: 32vw;
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(62, 201, 240, 0.4);
+    backdrop-filter: blur(10px);
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+    transition: all 0.5s ease;
+
+    position: relative;
+    background-size: 200% 200%; /* We'll show 1/4th of the image */
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+/* .top-left    { background-position: 0%   0%; }
+.top-right   { background-position: 100% 0%; }
+.bottom-left { background-position: 0% 100%; }
+.bottom-right{ background-position: 100% 100%; } */
+
+.reviwPeople img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+.reviewPicture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+} 
+
+.reviewContainer:hover {
+    gap: 0.5rem;
+  }
+  
+  .reviewContainer:hover .reviwPeople {
+    border-radius: 0;
+  }
+  
+  .reviewContainer:hover .reviewPicture,
+  .reviewContainer:hover .reviwPeople img {
+    display: none;
+  }
+
+ 

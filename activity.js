@@ -1,49 +1,39 @@
-async function loadActivity() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const activityName = urlParams.get('activity');
+async function loadActivityContent() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const activityName = decodeURIComponent(urlParams.get('activity'));
+  const contentDiv = document.getElementById('content');
 
-    const contentDiv = document.getElementById('content');
+  try {
+    const response = await fetch('data/activities.json');
+    const activities = await response.json();
+    
+    const matched = Object.values(activities).flat().find(
+      item => item.name.toLowerCase() === activityName.toLowerCase()
+    );
 
-    if (!activityName) {
-      contentDiv.innerHTML = '<p class="not-found">No activity specified.</p>';
+    if (!matched) {
+      contentDiv.innerHTML = `<p class="not-found">Activity "${activityName}" not found.</p>`;
       return;
     }
 
-    try {
-      const response = await fetch('data/activities.json'); // Make sure this is in the same folder
-      const data = await response.json();
-
-      console.log(data)
-
-      
-      // Flatten the data into a single array of activities
-      const allActivities = Object.values(data).flat();
-
-      const matched = allActivities.find(item => item.name.toLowerCase() === activityName.toLowerCase());
-
-      if (!matched) {
-        contentDiv.innerHTML = `<p class="not-found">Activity "${activityName}" not found.</p>`;
-        return;
-      }
-
-      document.title = matched.name;
-      contentDiv.innerHTML = `
-      <h1 class="activity-group">${matched.group}</h1>
+    document.title = matched.name;
+    contentDiv.innerHTML = `
+      <h1 class="activity-group" data-t="activities.${matched.id}.group">${matched.group}</h1>
       <section class="activity-box">
-        <h2 class="activity-title">${matched.name}</h2>
-        <p class="activity-description">${matched.description}</p>
+        <h2 class="activity-title" data-t="activities.${matched.id}.name">${matched.name}</h2>
+        <p class="activity-description" data-t="activities.${matched.id}.description">${matched.description}</p>
         <section class="images-box">
-            <img class="image1" src="${matched.images.image1}">
-            <img class="image2" src="${matched.images.image2}">
-            <img class="image3" src="${matched.images.image3}">
-            <img class="image4" src="${matched.images.image4}">
+          ${[1,2,3,4].map(i => 
+            `<img class="image${i}" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
+          ).join('')}
         </section>
       </section>
-      `;
-    } catch (err) {
-      console.error('Error fetching activities.json:', err);
-      contentDiv.innerHTML = '<p class="not-found">Failed to load activity data.</p>';
-    }
+    `;
+    
+    translateAll();
+  } catch (err) {
+    console.error('Error loading activity:', err);
+    contentDiv.innerHTML = '<p class="not-found">Failed to load activity data.</p>';
   }
+}
 
-  loadActivity();

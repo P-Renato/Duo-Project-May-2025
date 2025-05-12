@@ -1,0 +1,65 @@
+{
+    "travelTypes": {
+      "soloTravel": {
+        "name": "Alleinreisen",
+        "group": "Nach Gruppe",
+        "description": "Erlebe völlige Freiheit, in deinem eigenen Tempo zu reisen. Triff neue Menschen, entdecke dich selbst und erlebe persönliche Abenteuer ohne Kompromisse. Perfekt für Selbstreflexion und spontane Abstecher zu verborgenen Schätzen, die die meisten Gruppen verpassen."
+      },
+      "couples": {
+        "name": "Paare",
+        "group": "Nach Gruppe",
+        "description": "Romantische Ausflüge für zwei, mit intimen Erlebnissen von Sonnenuntergangsfahrten bis zu privaten Abendessen. Entfacht eure Verbindung in luxuriösem Ambiente neu mit Aktivitäten für Paare und Unterkünften, die auf Verliebte zugeschnitten sind."
+      },
+      "family": {
+        "name": "Familie",
+        "group": "Nach Gruppe",
+        "description": "Stressfreie Urlaube mit Aktivitäten für alle Altersgruppen, von kindgerechten Stränden bis zu Abenteuern für Teenager. Familienresorts mit Kinderclubs, verbundenen Zimmern und lehrreichen Erlebnissen, die lebenslange Erinnerungen schaffen."
+      },
+      "friends": {
+        "name": "Freunde",
+        "group": "Nach Gruppe",
+        "description": "Gruppenabenteuer für gemeinsame Erlebnisse, von Party-Hostels bis zu geführten Touren. Ideal für Wiedersehen, Junggesellen- oder Junggesellinnenabschiede oder einfach, um unvergessliche Geschichten mit den besten Freunden zu schreiben."
+      },
+      "wellness": {
+        "name": "Wellness",
+        "group": "Nach Thema",
+        "description": "Erholsame Rückzugsorte mit Fokus auf geistiges und körperliches Wohlbefinden. Beinhaltet Yoga-Sitzungen, Spa-Behandlungen, Meditationsworkshops und gesunde Küche in ruhiger Umgebung für totale Entspannung und Erneuerung."
+      },
+      "foodAndWine": {
+        "name": "Essen & Wein",
+        "group": "Nach Thema",
+        "description": "Kulinarische Reisen mit Kochkursen bei lokalen Köchen, Weingutbesuchen, Marktbesichtigungen und exklusiven Dinner-Erlebnissen. Entdecke regionale Aromen und gastronomische Traditionen von leidenschaftlichen Food-Künstlern."
+      },
+      "honeymoon": {
+        "name": "Flitterwochen",
+        "group": "Nach Thema",
+        "description": "Luxuriöse romantische Ausflüge mit privaten Villen, Paarmassagen und exklusiven Erlebnissen. Beinhaltet Champagnerfrühstücke, abgeschiedene Strände und personalisierte Services zur Feier eures gemeinsamen neuen Lebens."
+      },
+      "volunteering": {
+        "name": "Freiwilligenarbeit",
+        "group": "Nach Thema",
+        "description": "Sinnvolle Reisen, die Entdeckung mit Engagement verbinden. Nimm an Projekten zum Tierschutz, zur Gemeindeentwicklung oder zum Unterrichten teil, tauche in lokale Kulturen ein und hinterlasse einen positiven Eindruck."
+      },
+      "summerHolidays": {
+        "name": "Sommerurlaub",
+        "group": "Saisonal",
+        "description": "Sonnenreiche Abenteuer mit Strandresorts, Wassersport und Outdoor-Festivals. Genieße lange Tage beim Erkunden von Küstenorten, Schwimmen in kristallklarem Wasser und Abendessen unter dem Sternenhimmel."
+      },
+      "winterGetaways": {
+        "name": "Winterausflüge",
+        "group": "Saisonal",
+        "description": "Gemütliche Berghütten, verschneite Landschaften und Après-Ski-Entspannung. Beinhaltet Skifahren, Snowboarden, Thermalbäder und charmante Winterdörfer mit festlichen Märkten und heißen Getränken."
+      },
+      "springBreak": {
+        "name": "Frühlingsferien",
+        "group": "Saisonal",
+        "description": "Energiegeladene Gruppenreisen mit Strandpartys, Pool-Clubs und non-stop Unterhaltung. Beliebte Reiseziele mit lebhaftem Nachtleben, Tagesausflügen und günstigen Angeboten für Studierende."
+      },
+      "christmasMarkets": {
+        "name": "Weihnachtsmärkte",
+        "group": "Saisonal",
+        "description": "Festliche Reisen zu Europas magischen Weihnachtsmärkten mit handgefertigten Geschenken, Glühwein und saisonalen Leckereien. Erlebe verschneite Städte, Lichtershows und traditionelle Feiertagsfreuden."
+      }
+    }
+  }
+  
