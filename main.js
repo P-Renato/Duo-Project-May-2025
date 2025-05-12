@@ -191,3 +191,15 @@ if (!window.location.pathname.includes('travelTypes.html')) {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+
+
+function changeLanguage(lang) {
+  i18next.changeLanguage(lang).then(() => {
+    localStorage.setItem('selectedLanguage', lang);
+    translateAll();
+  });
+}
+
+window.changeLanguage = changeLanguage;
+window.translateAll = translateAll;
