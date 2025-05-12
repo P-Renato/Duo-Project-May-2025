@@ -133,10 +133,10 @@ async function loadTravelTypeContent() {
     }
 
     contentDiv.innerHTML = `
-      <h1 class="travel-type-group" data-t="travelTypes.${matched.id}.group">${matched.group}</h1>
-      <section class="travel-type-box">
-        <h2 class="travel-type-title" data-t="travelTypes.${matched.id}.name">${matched.name}</h2>
-        <p class="travel-type-description" data-t="travelTypes.${matched.id}.description">${matched.description}</p>
+      <h1 class="activity-group" data-t="travelTypes.${matched.id}.group">${matched.group}</h1>
+      <section class="activity-box">
+        <h2 class="activity-title" data-t="travelTypes.${matched.id}.name">${matched.name}</h2>
+        <p class="activity-description" data-t="travelTypes.${matched.id}.description">${matched.description}</p>
         <section class="images-box">
           ${[1,2,3,4].map(i => 
             `<img class="image${i}" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
@@ -163,6 +163,13 @@ async function initApp() {
     });
 
     await loadContent();
+
+    console.log("Current DOM title:", document.title);
+console.log("Window location:", window.location.href);
+
+if (!window.location.pathname.includes('travelTypes.html')) {
+  console.warn("Warning: This script is running on the wrong page!");
+}
     
     const switcher = document.querySelector(".language-switcher");
     if (switcher) {
@@ -172,6 +179,7 @@ async function initApp() {
           .then(() => {
             localStorage.setItem('selectedLanguage', e.target.value);
             translateAll();
+            
           });
       });
     }
