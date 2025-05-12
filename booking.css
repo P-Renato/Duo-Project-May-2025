@@ -1,3 +1,9 @@
+:root {
+  --mainText: "Instrument Serif", serif;
+  --listMenuFont: "Forum", serif;
+}
+
+
 #bookingForm {
   position: fixed;
   top: 50%;
@@ -42,4 +48,45 @@
 
     button {
       margin-top: 10px;
+    }
+
+    /* Booking Form */
+
+    #bookingForm {
+      height: 55rem;
+      width: 30rem;
+    }
+
+    h3 {
+      font-style: var(--mainText);
+      text-align: center;
+    }
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      padding: .8rem;
+    }
+
+    .label{
+      font-family: var(--mainText);
+      letter-spacing: .3rem;
+      font-weight: bold;
+    }
+
+    .inputBox {
+      padding: .6rem;
+    }
+
+    button {
+      font-family: var(--mainText);
+      letter-spacing: .3rem;
+      font-weight: bold;
+      padding: .8rem;
+      background-color: rgb(127, 235, 221);
+    }
+
+
+    button:hover {
+      background-color: rgb(184, 245, 237);
     }

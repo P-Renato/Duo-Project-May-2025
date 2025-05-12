@@ -1,6 +1,18 @@
 document.querySelector('.slideBtn').addEventListener('click', () => {
+
   const form = document.getElementById('bookingForm');
   form.style.display = form.style.display === 'none' ? 'block' : 'none';
+
+});
+
+document.addEventListener('click', (e) => {
+  const form = document.getElementById('bookingForm');
+  const isClickInsideForm = form.contains(e.target);
+  const isClickOnButton = e.target.classList.contains('slideBtn');
+  
+  if (form.style.display === 'block' && !isClickInsideForm && !isClickOnButton) {
+    form.style.display = 'none';
+  }
 });
 
 // Handle Form Submission
@@ -26,6 +38,8 @@ document.getElementById('form').addEventListener('submit', function (e) {
   alert('Booking saved!');
   this.reset();
   displayBookings();
+  document.getElementById('bookingForm').style.display =  'none' ;
+
 });
 
 /* 
