@@ -144,11 +144,11 @@
           </div>
         </div>
 
-       </nav>
+        </nav>
 
       <nav class="login">
         
-         <a href="booking.htmlbooking.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+         <a href="booking.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
             fill="#1f1f1f">
             <path
               d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
@@ -208,7 +208,46 @@
       <div class="slider-track"> </div>
     </div>
   
+    <!-- here start the booking form -->
+
+
+         
+   <div id="bookingForm" style="display: none;">
   
+    <h3>Booking Form</h3>
+  
+  <form id="form">
+    <div class="formContainer">
+    <div class="formLabel">
+    <label class="label" for="firstName">First Name:</label>
+    <label class="label" for="lastName">Last Name:</label>
+    <label class="label" for="email">Email:</label>
+    <label class="label" for="adults">Adults:</label>
+    <label class="label" for="children">Children:</label>
+    <label class="label" for="startDate">Start Date:</label>
+    <label class="label" for="endDate">End Date:</label>
+    <label class="label" for="destination">Destination:</label>
+    <label class="label" for="budget">Budget (total):</label>
+   </div>
+    <div class="formInput">
+    <input class="inputBox" type="text" id="firstName" required><br>
+    <input class="inputBox" type="text" id="lastName" required><br>
+    <input class="inputBox" type="email" id="email" required><br>
+    <input class="inputBox" type="number" id="adults" min="1" required><br>
+    <input class="inputBox" type="number" id="children" min="0" required><br>
+    <input class="inputBox" type="date" id="startDate" required><br>
+    <input class="inputBox" type="date" id="endDate" required><br>
+    <input class="inputBox" type="text" id="destination" required><br>
+    <input class="inputBox" type="number" id="budget" min="0" required><br>
+    
+    </div>
+    </div>
+  <button type="submit">Submit Booking</button>  
+  </form>
+  
+</div>
+
+
 
 
   </section>
@@ -273,6 +312,15 @@
 
   </section>
 
+   <div id="chat-box" class="chat-box">
+    <p>Hello! Do you want to know the time?</p>
+    <p id="london">London:00:00:00 </p>
+    <p id="berlin">Berlin:00:00:00 </p>
+    <p id="singapore">Singapore:00:00:00 </p>
+    <p id="rio">Rio de Janeiro:00:00:00</p>
+    <button onclick="closeChat()">Close</button>
+  </div>
+
   <div class="chat-widget" onclick="openChat()">
     <div class="character">
       <img class="askme" src="Images/Logo/pics/girl.png" alt="girl">
@@ -280,12 +328,7 @@
     <div class="speech-bubble">Ask me!</div>
   </div>
 
-  <div id="chat-box" class="chat-box">
-    <p>Hello! Need help choosing a destination?</p>
-    <p>Try Europe for culture, Asia for food, or Tropicals to relax! 🌴</p>
-    <button onclick="closeChat()">Close</button>
-  </div>
-
+ 
   <!-- here is the person review section -->
 
  

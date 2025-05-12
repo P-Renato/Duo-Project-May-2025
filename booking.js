@@ -37,7 +37,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
   alert('Booking saved!');
   this.reset();
-  displayBookings();
+ /*  displayBookings(); */
   document.getElementById('bookingForm').style.display =  'none' ;
 
 });
@@ -89,6 +89,56 @@ function displayBookings() {
 } */
 
 
-   
+  /* tgus us the time zone  */ 
 
-   
+ 
+ 
+  /* function updateClocks() {
+  const now = new Date();
+
+  const londonTime = new Date(now.toLocaleString("en-US", { timeZone: "Europe/London" }));
+  const berlinTime = new Date(now.toLocaleString("en-US", { timeZone: "Europe/Berlin" }));
+  const singaporeTime = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
+  const rioTime = new Date(now.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
+
+  document.getElementById("london").textContent =
+    "London: " + londonTime.getHours().toString().padStart(2, "0") + ":" +
+    londonTime.getMinutes().toString().padStart(2, "0") + ":" +
+    londonTime.getSeconds().toString().padStart(2, "0");
+
+  document.getElementById("berlin").textContent =
+    "Berlin: " + berlinTime.getHours().toString().padStart(2, "0") + ":" +
+    berlinTime.getMinutes().toString().padStart(2, "0") + ":" +
+    berlinTime.getSeconds().toString().padStart(2, "0");
+
+  document.getElementById("singapore").textContent =
+    "Singapore: " + singaporeTime.getHours().toString().padStart(2, "0") + ":" +
+    singaporeTime.getMinutes().toString().padStart(2, "0") + ":" +
+    singaporeTime.getSeconds().toString().padStart(2, "0");
+
+  document.getElementById("rio").textContent =
+    "Rio de Janeiro: " + rioTime.getHours().toString().padStart(2, "0") + ":" +
+    rioTime.getMinutes().toString().padStart(2, "0") + ":" +
+    rioTime.getSeconds().toString().padStart(2, "0");
+}
+
+setInterval(updateClocks, 1000);
+updateClocks(); 
+ */
+
+function updateClocks() {
+  let now = new Date();
+
+  let london = new Date(now.toLocaleString("en-US", { timeZone: "Europe/London" }));
+  let berlin = new Date(now.toLocaleString("en-US", { timeZone: "Europe/Berlin" }));
+  let singapore = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
+  let rio = new Date(now.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
+
+  document.getElementById("london").innerText = "London: " + london.getHours() + ":" + london.getMinutes() + ":" + london.getSeconds();
+  document.getElementById("berlin").innerText = "Berlin: " + berlin.getHours() + ":" + berlin.getMinutes() + ":" + berlin.getSeconds();
+  document.getElementById("singapore").innerText = "Singapore: " + singapore.getHours() + ":" + singapore.getMinutes() + ":" + singapore.getSeconds();
+  document.getElementById("rio").innerText = "Rio de Janeiro: " + rio.getHours() + ":" + rio.getMinutes() + ":" + rio.getSeconds();
+}
+
+setInterval(updateClocks, 1000);
+updateClocks();

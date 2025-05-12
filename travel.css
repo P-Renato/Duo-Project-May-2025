@@ -107,6 +107,7 @@ top: 160px;
 right: 20px;
 cursor: pointer;
 display: flex;
+flex-direction: column;
 align-items: center;
 z-index: 1000;
 }
@@ -138,7 +139,7 @@ z-index: 1000;
  .chat-box {
   position: fixed;
   top: 270px;
-  left: 20px;
+  right: 20px;
   width: 250px;
   background: rgb(255, 255, 255);
   border: 2px solid #007BFF;

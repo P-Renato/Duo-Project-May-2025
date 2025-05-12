@@ -53,20 +53,44 @@
     /* Booking Form */
 
     #bookingForm {
-      height: 55rem;
-      width: 30rem;
+      display: flex;
+      justify-content: center;
+      max-height:34rem ;
+      max-width:25rem;
     }
 
     h3 {
       font-style: var(--mainText);
       text-align: center;
     }
-
+  .formContainer{
+    display: flex;
+    justify-content: center;
+  }
     #form {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       padding: .8rem;
+    
     }
+      .formLabel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.1rem;
+      } 
+      .formInput{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        margin-top: 1rem;
+      
+      } 
+ 
 
     .label{
       font-family: var(--mainText);
@@ -74,9 +98,7 @@
       font-weight: bold;
     }
 
-    .inputBox {
-      padding: .6rem;
-    }
+    
 
     button {
       font-family: var(--mainText);
