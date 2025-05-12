@@ -144,7 +144,7 @@
           </div>
         </div>
 
-       </nav>
+        </nav>
 
       <nav class="login">
         
@@ -208,7 +208,46 @@
       <div class="slider-track"> </div>
     </div>
   
+    <!-- here start the booking form -->
+
+
+         
+   <div id="bookingForm" style="display: none;">
   
+    <h3>Booking Form</h3>
+  
+  <form id="form">
+    <div class="formContainer">
+    <div class="formLabel">
+    <label class="label" for="firstName">First Name:</label>
+    <label class="label" for="lastName">Last Name:</label>
+    <label class="label" for="email">Email:</label>
+    <label class="label" for="adults">Adults:</label>
+    <label class="label" for="children">Children:</label>
+    <label class="label" for="startDate">Start Date:</label>
+    <label class="label" for="endDate">End Date:</label>
+    <label class="label" for="destination">Destination:</label>
+    <label class="label" for="budget">Budget (total):</label>
+   </div>
+    <div class="formInput">
+    <input class="inputBox" type="text" id="firstName" required><br>
+    <input class="inputBox" type="text" id="lastName" required><br>
+    <input class="inputBox" type="email" id="email" required><br>
+    <input class="inputBox" type="number" id="adults" min="1" required><br>
+    <input class="inputBox" type="number" id="children" min="0" required><br>
+    <input class="inputBox" type="date" id="startDate" required><br>
+    <input class="inputBox" type="date" id="endDate" required><br>
+    <input class="inputBox" type="text" id="destination" required><br>
+    <input class="inputBox" type="number" id="budget" min="0" required><br>
+    
+    </div>
+    </div>
+  <button type="submit">Submit Booking</button>  
+  </form>
+  
+</div>
+
+
 
 
   </section>
