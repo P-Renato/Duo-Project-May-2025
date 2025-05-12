@@ -305,6 +305,53 @@ background: #005bb5;
     object-fit: cover;
   }
 
-  #freePlanbtn {
+#freePlanbtn {
     margin: 0;
-  }
+}
+
+footer {
+    background-color: white;
+    width: 100vw;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    margin: 1rem;
+    margin-right: .4rem;
+}
+
+
+
+.copyRightText p {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+
+}
+.mailBoxFooter,
+.phoneBoxFooter,
+.timeBoxFooter,
+.h4Content {
+    display: flex;
+    margin: .4rem;
+    text-decoration: underline;
+    padding: .2rem;
+
+}
+
+.contactContent p {
+    margin-left: .4rem;
+}
+
+.footerBookingBtn {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
