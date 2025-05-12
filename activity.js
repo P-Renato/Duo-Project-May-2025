@@ -19,15 +19,15 @@ async function loadActivityContent() {
     document.title = matched.name;
     contentDiv.innerHTML = `
       <h1 class="activity-group" data-t="activities.${matched.id}.group">${matched.group}</h1>
-      <section class="activity-box">
+      <div class="activity-box">
         <h2 class="activity-title" data-t="activities.${matched.id}.name">${matched.name}</h2>
         <p class="activity-description" data-t="activities.${matched.id}.description">${matched.description}</p>
-        <section class="images-box">
+        <div class="images-box">
           ${[1,2,3,4].map(i => 
-            `<img class="image${i}" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
+            `<img class="image${i} imgDynamic" src="${matched.images[`image${i}`]}" alt="${matched.name}">`
           ).join('')}
-        </section>
-      </section>
+        </div>
+      </div>
     `;
     
     translateAll();

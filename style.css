@@ -103,7 +103,7 @@ z-index: 999;
 .destination-menu{
     justify-content: space-around;
     align-items: center;
-    left: -21rem;
+    left: -22rem;
     padding: 0.5rem 2rem ;
     height: 16rem;
     width: 110vw;
@@ -111,10 +111,10 @@ z-index: 999;
 .activities-menu{
     justify-content: space-around;
     align-items: center;
-    left: -30rem;
+    left: -32rem;
    padding: 0.5rem 2rem;
     height: 16rem;
-    width: 100vw;
+    width: 110vw;
 }
 .travel-types-menu {
     justify-content: space-around;
